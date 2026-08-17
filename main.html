@@ -1,732 +1,1504 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="scroll-smooth">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="content-language" content="en">
-  <title>Latifa. — Front-End Developer & Digital Designer</title>
-  <meta name="description" content="Latifa is a front-end developer and digital designer building thoughtful, human-centric web experiences with React, Next.js, and modern creative technologies.">
-  <meta name="keywords" content="front-end developer, digital designer, React, Next.js, portfolio, UI/UX, olive and beige aesthetic">
-  <meta name="robots" content="index, follow, max-image-preview:large">
-  <meta name="author" content="Latifa">
-  <meta name="generator" content="MotionCraft AI">
-  <meta name="application-name" content="Latifa Portfolio">
-  
-  <meta name="theme-color" content="#3F4932">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Latifa. — Front-End Developer & Digital Designer">
-  <meta property="og:description" content="Latifa is a front-end developer and digital designer building thoughtful, human-centric web experiences with React, Next.js, and modern creative technologies.">
-  <meta property="og:site_name" content="Latifa.">
-  <meta property="og:locale" content="en_US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="content-language" content="en" />
+    <title>Latifa. — Front-End Developer & Digital Designer</title>
+    <meta
+      name="description"
+      content="Latifa is a front-end developer and digital designer building thoughtful, human-centric web experiences with React, Next.js, and modern creative technologies."
+    />
+    <meta
+      name="keywords"
+      content="front-end developer, digital designer, React, Next.js, portfolio, UI/UX, olive and beige aesthetic"
+    />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="author" content="Latifa" />
+    <meta name="generator" content="MotionCraft AI" />
+    <meta name="application-name" content="Latifa Portfolio" />
 
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Latifa. — Front-End Developer & Digital Designer">
-  <meta name="twitter:description" content="Latifa is a front-end developer and digital designer building thoughtful, human-centric web experiences with React, Next.js, and modern creative technologies.">
+    <meta name="theme-color" content="#3F4932" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Latifa. — Front-End Developer & Digital Designer"
+    />
+    <meta
+      property="og:description"
+      content="Latifa is a front-end developer and digital designer building thoughtful, human-centric web experiences with React, Next.js, and modern creative technologies."
+    />
+    <meta property="og:site_name" content="Latifa." />
+    <meta property="og:locale" content="en_US" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Latifa. — Front-End Developer & Digital Designer"
+    />
+    <meta
+      name="twitter:description"
+      content="Latifa is a front-end developer and digital designer building thoughtful, human-centric web experiences with React, Next.js, and modern creative technologies."
+    />
 
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/lucide@0.525.0"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
-  <style>
-    :root {
-      --color-primary: #3F4932;
-      --color-dark-olive: #293021;
-      --color-bg-warm: #F1EBDD;
-      --color-bg-soft: #E5DDCA;
-      --color-bg-light: #F7F3EA;
-      --color-text-primary: #25291F;
-      --color-text-secondary: #68705B;
-      --color-accent: #B5A27A;
-      --color-border: #D2C9B5;
-    }
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@0.525.0"></script>
 
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: var(--color-bg-warm);
-      color: var(--color-text-primary);
-      overflow-x: hidden;
-      scrollbar-width: none;
-      -ms-overflow-style: none;
-    }
-    body::-webkit-scrollbar {
-      display: none;
-    }
+    <style>
+      :root {
+        --color-primary: #3f4932;
+        --color-dark-olive: #293021;
+        --color-bg-warm: #f1ebdd;
+        --color-bg-soft: #e5ddca;
+        --color-bg-light: #f7f3ea;
+        --color-text-primary: #25291f;
+        --color-text-secondary: #68705b;
+        --color-accent: #b5a27a;
+        --color-border: #d2c9b5;
+      }
 
-    .font-serif-editorial {
-      font-family: 'DM Serif Display', serif;
-    }
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: var(--color-bg-warm);
+        color: var(--color-text-primary);
+        overflow-x: hidden;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+      }
+      body::-webkit-scrollbar {
+        display: none;
+      }
 
-    /* Paper grain texture */
-    .paper-texture {
-      background-image: radial-gradient(rgba(63, 73, 50, 0.04) 1px, transparent 0);
-      background-size: 24px 24px;
-    }
+      .font-serif-editorial {
+        font-family: "DM Serif Display", serif;
+      }
 
-    /* Custom cursor */
-    .custom-cursor {
-      pointer-events: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 9999;
-      border-radius: 50%;
-      transition: transform 0.15s ease-out, width 0.2s ease, height 0.2s ease, background-color 0.2s ease;
-      transform: translate(-50%, -50%);
-    }
+      .nav-cta {
+        font-size: 0.65rem;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--color-text-primary);
+        border: none;
+        background: transparent;
+        padding: 0.35rem 0.25rem;
+        transition:
+          color 0.3s ease,
+          opacity 0.3s ease;
+      }
 
-    @keyframes marquee {
-      0% { transform: translateX(0%); }
-      100% { transform: translateX(-50%); }
-    }
+      .nav-cta:hover {
+        color: #b5a27a;
+      }
 
-    .animate-marquee {
-      display: flex;
-      width: 200%;
-      animation: marquee 25s linear infinite;
-    }
-    .animate-marquee:hover {
-      animation-play-state: paused;
-    }
-  
-.hero-product-img { mix-blend-mode: multiply; display: block; }
-</style>
-</head>
-<body class="paper-texture">
+      .hero-secondary-cta {
+        background: transparent;
+        color: #3f4932;
+        border: 1px solid #3f4932;
+      }
 
-  <!-- Custom Cursor (Desktop Only) -->
-  <div id="cursor" class="custom-cursor hidden lg:block w-3 h-3 bg-[#3F4932] mix-blend-difference"></div>
-  <div id="cursor-follower" class="custom-cursor hidden lg:block w-10 h-10 border border-[#3F4932]/40"></div>
+      /* Paper grain texture */
+      .paper-texture {
+        background-image: radial-gradient(
+          rgba(63, 73, 50, 0.04) 1px,
+          transparent 0
+        );
+        background-size: 24px 24px;
+      }
 
-  <!-- Navbar -->
-  <header class="fixed top-0 left-0 w-full z-50 transition-all duration-300" id="navbar">
-    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-      <a href="#home" class="font-serif-editorial text-2xl tracking-wider text-[#3F4932] font-bold">LATIFA.</a>
-      
-      <nav class="hidden md:flex items-center gap-8">
-        <a href="#home" class="nav-link text-sm tracking-widest uppercase text-[#25291F] hover:text-[#B5A27A] transition-colors relative py-1">Home</a>
-        <a href="#about" class="nav-link text-sm tracking-widest uppercase text-[#25291F] hover:text-[#B5A27A] transition-colors relative py-1">About</a>
-        <a href="#skills" class="nav-link text-sm tracking-widest uppercase text-[#25291F] hover:text-[#B5A27A] transition-colors relative py-1">Skills</a>
-        <a href="#works" class="nav-link text-sm tracking-widest uppercase text-[#25291F] hover:text-[#B5A27A] transition-colors relative py-1">Works</a>
-        <a href="#contact" class="nav-link text-sm tracking-widest uppercase text-[#25291F] hover:text-[#B5A27A] transition-colors relative py-1">Contact</a>
-      </nav>
+      /* Custom cursor */
+      .custom-cursor {
+        pointer-events: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        border-radius: 50%;
+        transition:
+          transform 0.15s ease-out,
+          width 0.2s ease,
+          height 0.2s ease,
+          background-color 0.2s ease;
+        transform: translate(-50%, -50%);
+      }
 
-      <div class="hidden md:block">
-        <a href="mailto:hello@latifa.dev" class="interactive-el px-5 py-2.5 rounded-full border border-[#3F4932] text-[#3F4932] text-xs font-semibold uppercase tracking-widest hover:bg-[#3F4932] hover:text-[#F1EBDD] transition-all duration-300">
-          Let's Talk
-        </a>
+      @keyframes marquee {
+        0% {
+          transform: translateX(0%);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+
+      .animate-marquee {
+        display: flex;
+        width: 200%;
+        animation: marquee 25s linear infinite;
+      }
+      .animate-marquee:hover {
+        animation-play-state: paused;
+      }
+
+      .hero-product-img {
+        mix-blend-mode: multiply;
+        display: block;
+      }
+    </style>
+  </head>
+  <body class="paper-texture">
+    <!-- Custom Cursor (Desktop Only) -->
+    <div
+      id="cursor"
+      class="custom-cursor hidden lg:block w-3 h-3 bg-[#3F4932] mix-blend-difference"
+    ></div>
+    <div
+      id="cursor-follower"
+      class="custom-cursor hidden lg:block w-10 h-10 border border-[#3F4932]/40"
+    ></div>
+
+    <!-- Navbar -->
+    <header
+      class="fixed top-0 left-0 w-full z-50 transition-all duration-300"
+      id="navbar"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between"
+      >
+        <a
+          href="#home"
+          class="font-serif-editorial text-2xl tracking-wider text-[#3F4932] font-bold"
+          >LATIFA.</a
+        >
+
+        <nav class="hidden md:flex items-center gap-8">
+          <a
+            href="#home"
+            class="nav-link text-sm tracking-widest uppercase text-[#25291F] hover:text-[#B5A27A] transition-colors relative py-1"
+            >Home</a
+          >
+          <a
+            href="#about"
+            class="nav-link text-sm tracking-widest uppercase text-[#25291F] hover:text-[#B5A27A] transition-colors relative py-1"
+            >About</a
+          >
+          <a
+            href="#skills"
+            class="nav-link text-sm tracking-widest uppercase text-[#25291F] hover:text-[#B5A27A] transition-colors relative py-1"
+            >Skills</a
+          >
+          <a
+            href="#works"
+            class="nav-link text-sm tracking-widest uppercase text-[#25291F] hover:text-[#B5A27A] transition-colors relative py-1"
+            >Works</a
+          >
+          <a
+            href="#contact"
+            class="nav-link text-sm tracking-widest uppercase text-[#25291F] hover:text-[#B5A27A] transition-colors relative py-1"
+            >Contact</a
+          >
+        </nav>
+
+        <div class="hidden md:block">
+          <a
+            href="mailto:latifajarrah22@gmail.com"
+            class="nav-cta interactive-el font-semibold hover:text-[#B5A27A] transition-colors duration-300"
+          >
+            Let's Talk
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button
+          id="menuBtn"
+          class="md:hidden text-[#3F4932] p-2 focus:outline-none"
+          aria-label="Toggle menu"
+        >
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
       </div>
+    </header>
 
-      <!-- Mobile Menu Button -->
-      <button id="menuBtn" class="md:hidden text-[#3F4932] p-2 focus:outline-none" aria-label="Toggle menu">
-        <i data-lucide="menu" class="w-6 h-6"></i>
-      </button>
+    <!-- Mobile Menu Overlay -->
+    <div
+      id="mobileMenu"
+      class="fixed inset-0 bg-[#F1EBDD] z-40 flex flex-col justify-center items-center gap-6 text-center transform translate-x-full transition-transform duration-500 md:hidden"
+    >
+      <a
+        href="#home"
+        class="mobile-link font-serif-editorial text-3xl text-[#3F4932]"
+        >Home</a
+      >
+      <a
+        href="#about"
+        class="mobile-link font-serif-editorial text-3xl text-[#3F4932]"
+        >About</a
+      >
+      <a
+        href="#skills"
+        class="mobile-link font-serif-editorial text-3xl text-[#3F4932]"
+        >Skills</a
+      >
+      <a
+        href="#works"
+        class="mobile-link font-serif-editorial text-3xl text-[#3F4932]"
+        >Works</a
+      >
+      <a
+        href="#contact"
+        class="mobile-link font-serif-editorial text-3xl text-[#3F4932]"
+        >Contact</a
+      >
+      <a
+        href="mailto:hello@latifa.dev"
+        class="mt-4 px-8 py-3 bg-[#3F4932] text-[#F1EBDD] text-sm uppercase tracking-widest rounded-full"
+        >Let's Talk</a
+      >
     </div>
-  </header>
 
-  <!-- Mobile Menu Overlay -->
-  <div id="mobileMenu" class="fixed inset-0 bg-[#F1EBDD] z-40 flex flex-col justify-center items-center gap-6 text-center transform translate-x-full transition-transform duration-500 md:hidden">
-    <a href="#home" class="mobile-link font-serif-editorial text-3xl text-[#3F4932]">Home</a>
-    <a href="#about" class="mobile-link font-serif-editorial text-3xl text-[#3F4932]">About</a>
-    <a href="#skills" class="mobile-link font-serif-editorial text-3xl text-[#3F4932]">Skills</a>
-    <a href="#works" class="mobile-link font-serif-editorial text-3xl text-[#3F4932]">Works</a>
-    <a href="#contact" class="mobile-link font-serif-editorial text-3xl text-[#3F4932]">Contact</a>
-    <a href="mailto:hello@latifa.dev" class="mt-4 px-8 py-3 bg-[#3F4932] text-[#F1EBDD] text-sm uppercase tracking-widest rounded-full">Let's Talk</a>
-  </div>
-
-  <main id="home">
-    
-    <!-- SECTION 1: MOTION CANVAS HERO -->
-    <section id="motionSection" class="relative bg-[#F1EBDD] pt-20 overflow-hidden">
-      
-      <!-- Loading Screen -->
-      <div id="ls" class="absolute inset-0 z-30 bg-[#F1EBDD] flex flex-col items-center justify-center transition-opacity duration-500">
-        <div class="font-serif-editorial text-3xl text-[#3F4932] mb-4">LATIFA.</div>
-        <div class="w-48 h-[2px] bg-[#D2C9B5] relative overflow-hidden">
-          <div id="lb" class="absolute left-0 top-0 h-full bg-[#3F4932] w-0 transition-all duration-150"></div>
-        </div>
-        <p id="lt" class="text-xs uppercase tracking-widest text-[#68705B] mt-3">Loading 0%</p>
-      </div>
-
-      <div class="sticky top-0 h-screen w-full flex items-center justify-center overflow-hidden">
-        <!-- <canvas id="motionCanvas" class="absolute inset-0 w-full h-full object-cover opacity-90"></canvas> -->
-
-        <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
-          <div class="flex flex-col lg:flex-row items-center lg:items-center gap-8 w-full">
-            <div class="lg:w-1/2 text-center lg:text-left">
-              <div id="mLabel" class="opacity-0 transition-opacity duration-700 inline-block text-xs uppercase tracking-[0.25em] text-[#68705B] bg-[#E5DDCA]/80 backdrop-blur px-4 py-1.5 rounded-full mb-6 border border-[#D2C9B5]">
-                FRONT-END DEVELOPER
-              </div>
-
-              <h1 id="mTitle" class="opacity-0 transition-opacity duration-700 text-4xl md:text-6xl lg:text-7xl font-light text-[#25291F] tracking-tight leading-[1.08] mb-6">
-                Building digital experiences that feel <span class="font-serif-editorial italic text-[#3F4932]">human.</span>
-              </h1>
-
-              <p id="mSub" class="opacity-0 transition-opacity duration-700 max-w-xl mx-auto lg:mx-0 text-sm md:text-base text-[#68705B] font-light leading-relaxed mb-6">
-                I design and develop modern, responsive web experiences using React, Next.js and modern front-end technologies with meticulous attention to detail.
-              </p>
-
-              <div id="mCta" class="opacity-0 transition-opacity duration-700 flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-4">
-                <a href="#works" class="interactive-el w-full sm:w-auto px-8 py-4 bg-[#3F4932] text-[#F1EBDD] text-xs font-semibold uppercase tracking-widest rounded-full hover:bg-[#293021] transition-all duration-300 flex items-center justify-center gap-3 group">
-                  <span>View My Work</span>
-                  <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
-                </a>
-                <a href="#contact" class="interactive-el w-full sm:w-auto px-8 py-4 border border-[#3F4932] text-[#3F4932] text-xs font-semibold uppercase tracking-widest rounded-full hover:bg-[#3F4932] hover:text-[#F1EBDD] transition-all duration-300">
-                  Let's Talk
-                </a>
-              </div>
-            </div>
-
-            <div class="lg:w-1/2 flex justify-center lg:justify-end">
-              <img id="heroImage" src="assets/images/latifa.jpeg" alt="Latifa portrait" class="hero-product-img rounded-2xl border border-[#D2C9B5] w-72 md:w-96 lg:w-[520px] object-cover shadow-lg z-20" />
-            </div>
+    <main id="home">
+      <!-- SECTION 1: MOTION CANVAS HERO -->
+      <section
+        id="motionSection"
+        class="relative bg-[#F1EBDD] pt-20 overflow-hidden"
+      >
+        <!-- Loading Screen -->
+        <div
+          id="ls"
+          class="absolute inset-0 z-30 bg-[#F1EBDD] flex flex-col items-center justify-center transition-opacity duration-500"
+        >
+          <div class="font-serif-editorial text-3xl text-[#3F4932] mb-4">
+            LATIFA.
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 2: INTRO STATEMENT -->
-    <section class="py-32 bg-[#E5DDCA] text-[#25291F] relative overflow-hidden">
-      <div class="max-w-5xl mx-auto px-6">
-        <span class="text-xs font-semibold uppercase tracking-[0.2em] text-[#68705B] block mb-6">01 — INTRODUCTION</span>
-        <h2 class="font-serif-editorial text-4xl md:text-6xl lg:text-7xl leading-[1.15] text-[#25291F] font-normal">
-          "I turn ideas into clean, interactive and meaningful digital experiences."
-        </h2>
-        <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 pt-12 border-t border-[#D2C9B5]">
-          <div>
-            <h3 class="text-xs uppercase tracking-widest text-[#68705B] mb-2 font-semibold">Philosophy</h3>
-            <p class="text-sm text-[#25291F] leading-relaxed">Design is not just what it looks like. It is how it feels, how it moves, and how intuitively it serves the user.</p>
+          <div class="w-48 h-[2px] bg-[#D2C9B5] relative overflow-hidden">
+            <div
+              id="lb"
+              class="absolute left-0 top-0 h-full bg-[#3F4932] w-0 transition-all duration-150"
+            ></div>
           </div>
-          <div>
-            <h3 class="text-xs uppercase tracking-widest text-[#68705B] mb-2 font-semibold">Craftsmanship</h3>
-            <p class="text-sm text-[#25291F] leading-relaxed">Writing resilient code paired with sophisticated visual systems inspired by contemporary architecture.</p>
-          </div>
-          <div>
-            <h3 class="text-xs uppercase tracking-widest text-[#68705B] mb-2 font-semibold">Standard</h3>
-            <p class="text-sm text-[#25291F] leading-relaxed">Zero bloat, accessible structure, responsive fluid layouts, and cinematic motion that breathes.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 3: FEATURED WORK -->
-    <section id="works" class="py-32 bg-[#F1EBDD] text-[#25291F]">
-      <div class="max-w-7xl mx-auto px-6">
-        <div class="flex flex-col md:flex-row md:items-end justify-between mb-20">
-          <div>
-            <span class="text-xs font-semibold uppercase tracking-[0.2em] text-[#68705B] block mb-3">02 — PORTFOLIO</span>
-            <h2 class="font-serif-editorial text-4xl md:text-6xl text-[#3F4932]">Selected Work</h2>
-          </div>
-          <p class="text-[#68705B] max-w-md mt-4 md:mt-0 text-sm md:text-base leading-relaxed">
-            A selection of projects where design, development and problem-solving come together in harmony.
+          <p
+            id="lt"
+            class="text-xs uppercase tracking-widest text-[#68705B] mt-3"
+          >
+            Loading 0%
           </p>
         </div>
 
-        <!-- Asymmetric Project Layout -->
-        <div class="space-y-24">
-          
-          <!-- Project 01 -->
-          <article class="group grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-            <div class="lg:col-span-7 overflow-hidden rounded-2xl border border-[#D2C9B5] relative aspect-[16/10] bg-[#E5DDCA]">
-              <img src="https://picsum.photos/seed/10/1200/800" alt="Atelier Architecture Platform" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 filter saturate-[0.85] group-hover:saturate-100" loading="lazy">
-              <div class="absolute inset-0 bg-[#3F4932]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-            </div>
-            <div class="lg:col-span-5 lg:pl-6">
-              <span class="text-xs uppercase tracking-widest text-[#68705B] block mb-2">Web Application / UI Architecture</span>
-              <h3 class="font-serif-editorial text-3xl md:text-4xl text-[#3F4932] mb-4">Atelier Sanctuary</h3>
-              <p class="text-[#68705B] text-sm md:text-base leading-relaxed mb-6">
-                A digital sanctuary for contemporary spatial designers featuring immersive gallery viewports, fluid layout transitions, and refined typography.
-              </p>
-              <div class="flex flex-wrap gap-2 mb-8">
-                <span class="text-xs px-3 py-1 rounded-full border border-[#D2C9B5] text-[#25291F]">Next.js</span>
-                <span class="text-xs px-3 py-1 rounded-full border border-[#D2C9B5] text-[#25291F]">Tailwind CSS</span>
-                <span class="text-xs px-3 py-1 rounded-full border border-[#D2C9B5] text-[#25291F]">Framer Motion</span>
-              </div>
-              <a href="#project-detail" class="interactive-el inline-flex items-center gap-3 text-xs uppercase tracking-widest font-semibold text-[#3F4932] group-hover:text-[#B5A27A] transition-colors">
-                <span>Explore Case Study</span>
-                <i data-lucide="arrow-right" class="w-4 h-4 transform group-hover:translate-x-1 transition-transform"></i>
-              </a>
-            </div>
-          </article>
+        <div
+          class="sticky top-0 pt-20 pb-28 w-full flex items-center justify-center overflow-hidden"
+        >
+          <!-- <canvas id="motionCanvas" class="absolute inset-0 w-full h-full object-cover opacity-90"></canvas> -->
 
-          <!-- Project 02 (Reversed) -->
-          <article class="group grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-            <div class="lg:col-span-5 lg:pr-6 order-2 lg:order-1">
-              <span class="text-xs uppercase tracking-widest text-[#68705B] block mb-2">E-Commerce / Editorial</span>
-              <h3 class="font-serif-editorial text-3xl md:text-4xl text-[#3F4932] mb-4">Botanica Olive Oil</h3>
-              <p class="text-[#68705B] text-sm md:text-base leading-relaxed mb-6">
-                An artisanal olive oil brand experience highlighting heritage harvesting, organic origin stories, and seamless direct-to-consumer purchasing.
-              </p>
-              <div class="flex flex-wrap gap-2 mb-8">
-                <span class="text-xs px-3 py-1 rounded-full border border-[#D2C9B5] text-[#25291F]">React</span>
-                <span class="text-xs px-3 py-1 rounded-full border border-[#D2C9B5] text-[#25291F]">Shopify Storefront API</span>
-                <span class="text-xs px-3 py-1 rounded-full border border-[#D2C9B5] text-[#25291F]">Zustand</span>
-              </div>
-              <a href="#project-detail" class="interactive-el inline-flex items-center gap-3 text-xs uppercase tracking-widest font-semibold text-[#3F4932] group-hover:text-[#B5A27A] transition-colors">
-                <span>Explore Case Study</span>
-                <i data-lucide="arrow-right" class="w-4 h-4 transform group-hover:translate-x-1 transition-transform"></i>
-              </a>
-            </div>
-            <div class="lg:col-span-7 overflow-hidden rounded-2xl border border-[#D2C9B5] relative aspect-[16/10] bg-[#E5DDCA] order-1 lg:order-2">
-              <img src="https://picsum.photos/seed/11/1200/800" alt="Botanica E-commerce" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 filter saturate-[0.85] group-hover:saturate-100" loading="lazy">
-              <div class="absolute inset-0 bg-[#3F4932]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-            </div>
-          </article>
-
-          <!-- Project 03 (Full-Width Immersive) -->
-          <article class="group relative rounded-2xl overflow-hidden border border-[#D2C9B5] bg-[#E5DDCA] aspect-[21/9]">
-            <img src="https://picsum.photos/seed/12/1600/700" alt="Minimal Studio Dashboard" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 filter saturate-[0.85] group-hover:saturate-100" loading="lazy">
-            <div class="absolute inset-0 bg-gradient-to-t from-[#293021]/90 via-[#293021]/30 to-transparent flex flex-col justify-end p-8 md:p-12">
-              <span class="text-xs uppercase tracking-widest text-[#B5A27A] block mb-2">Dashboard / Design System</span>
-              <h3 class="font-serif-editorial text-3xl md:text-5xl text-[#F1EBDD] mb-4">Verve Creative Workspace</h3>
-              <p class="text-[#E5DDCA] text-sm md:text-base max-w-2xl leading-relaxed mb-6">
-                A streamlined collaboration environment for creative directors, combining task architecture, real-time feedback loops, and tokenized design assets.
-              </p>
-              <div class="flex items-center justify-between flex-wrap gap-4">
-                <div class="flex flex-wrap gap-2">
-                  <span class="text-xs px-3 py-1 rounded-full border border-[#B5A27A]/30 text-[#F1EBDD]">TypeScript</span>
-                  <span class="text-xs px-3 py-1 rounded-full border border-[#B5A27A]/30 text-[#F1EBDD]">Supabase</span>
-                  <span class="text-xs px-3 py-1 rounded-full border border-[#B5A27A]/30 text-[#F1EBDD]">Tailwind</span>
+          <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
+            <div
+              class="flex flex-col lg:flex-row items-center lg:items-center gap-8 w-full"
+            >
+              <div class="lg:w-1/2 text-center lg:text-left">
+                <div
+                  id="mLabel"
+                  class="opacity-0 transition-opacity duration-700 inline-block text-xs uppercase tracking-[0.25em] text-[#68705B] bg-[#E5DDCA]/80 backdrop-blur px-4 py-1.5 rounded-full mb-6 border border-[#D2C9B5]"
+                >
+                  FRONT-END DEVELOPER
                 </div>
-                <a href="#project-detail" class="interactive-el inline-flex items-center gap-3 text-xs uppercase tracking-widest font-semibold text-[#F1EBDD] hover:text-[#B5A27A] transition-colors">
+
+                <h1
+                  id="mTitle"
+                  class="opacity-0 transition-opacity duration-700 text-4xl md:text-6xl lg:text-7xl font-light text-[#25291F] tracking-tight leading-[1.08] mb-6"
+                >
+                  Building digital experiences that feel
+                  <span class="font-serif-editorial italic text-[#3F4932]"
+                    >human.</span
+                  >
+                </h1>
+
+                <p
+                  id="mSub"
+                  class="opacity-0 transition-opacity duration-700 max-w-xl mx-auto lg:mx-0 text-sm md:text-base text-[#4A4A4A] font-light leading-relaxed mb-6"
+                >
+                  I design and develop modern, responsive web experiences using
+                  React, Next.js and modern front-end technologies with
+                  meticulous attention to detail.
+                </p>
+
+                <div
+                  id="mCta"
+                  class="opacity-0 transition-opacity duration-700 flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-4"
+                >
+                  <a
+                    href="#works"
+                    class="interactive-el w-full sm:w-auto px-8 py-4 bg-[#3F4932] text-[#F1EBDD] text-xs font-semibold uppercase tracking-widest rounded-full hover:bg-[#293021] transition-all duration-300 flex items-center justify-center gap-3 group"
+                  >
+                    <span>View My Work</span>
+                    <i
+                      data-lucide="arrow-right"
+                      class="w-4 h-4 group-hover:translate-x-1 transition-transform"
+                    ></i>
+                  </a>
+                  <a
+                    href="#contact"
+                    class="hero-secondary-cta interactive-el w-full sm:w-auto px-8 py-4 text-xs font-semibold uppercase tracking-widest rounded-full hover:bg-[#3F4932] hover:text-[#F1EBDD] transition-all duration-300"
+                  >
+                    Let's Talk
+                  </a>
+                </div>
+              </div>
+
+              <div class="lg:w-1/2 flex justify-center lg:justify-end">
+                <img
+                  id="heroImage"
+                  src="assets/images/latifa.jpeg"
+                  alt="Latifa portrait"
+                  class="hero-product-img rounded-2xl border border-[#D2C9B5] w-72 md:w-96 lg:w-[520px] object-cover shadow-lg z-20"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2: INTRO STATEMENT -->
+      <section
+        class="py-32 bg-[#E5DDCA] text-[#25291F] relative overflow-hidden"
+      >
+        <div class="max-w-5xl mx-auto px-6">
+          <span
+            class="text-xs font-semibold uppercase tracking-[0.2em] text-[#68705B] block mb-6"
+            >01 — INTRODUCTION</span
+          >
+          <h2
+            class="font-serif-editorial text-4xl md:text-6xl lg:text-7xl leading-[1.15] text-[#25291F] font-normal"
+          >
+            "I turn ideas into clean, interactive and meaningful digital
+            experiences."
+          </h2>
+          <div
+            class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 pt-12 border-t border-[#D2C9B5]"
+          >
+            <div>
+              <h3
+                class="text-xs uppercase tracking-widest text-[#68705B] mb-2 font-semibold"
+              >
+                Philosophy
+              </h3>
+              <p class="text-sm text-[#25291F] leading-relaxed">
+                Design is not just what it looks like. It is how it feels, how
+                it moves, and how intuitively it serves the user.
+              </p>
+            </div>
+            <div>
+              <h3
+                class="text-xs uppercase tracking-widest text-[#68705B] mb-2 font-semibold"
+              >
+                Craftsmanship
+              </h3>
+              <p class="text-sm text-[#25291F] leading-relaxed">
+                Turning designs into pixel-perfect, production-ready interfaces
+                that just work.
+              </p>
+            </div>
+            <div>
+              <h3
+                class="text-xs uppercase tracking-widest text-[#68705B] mb-2 font-semibold"
+              >
+                Standard
+              </h3>
+              <p class="text-sm text-[#25291F] leading-relaxed">
+                Fast-loading, accessible interfaces that work seamlessly across
+                every screen size.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 3: FEATURED WORK -->
+      <section id="works" class="py-32 bg-[#F1EBDD] text-[#25291F]">
+        <div class="max-w-7xl mx-auto px-6">
+          <div
+            class="flex flex-col md:flex-row md:items-end justify-between mb-20"
+          >
+            <div>
+              <span
+                class="text-xs font-semibold uppercase tracking-[0.2em] text-[#68705B] block mb-3"
+                >02 — PORTFOLIO</span
+              >
+              <h2
+                class="font-serif-editorial text-4xl md:text-6xl text-[#3F4932]"
+              >
+                Selected Work
+              </h2>
+            </div>
+            <p
+              class="text-[#68705B] max-w-md mt-4 md:mt-0 text-sm md:text-base leading-relaxed"
+            >
+              A selection of projects where design, development and
+              problem-solving come together in harmony.
+            </p>
+          </div>
+
+          <!-- Asymmetric Project Layout -->
+          <div class="space-y-24">
+            <!-- Project 01 -->
+            <article
+              class="group grid grid-cols-1 lg:grid-cols-12 gap-8 items-center"
+            >
+              <div
+                class="lg:col-span-7 overflow-hidden rounded-2xl border border-[#D2C9B5] relative aspect-[1/1] lg:aspect-[1.2/1] bg-[#E5DDCA]"
+              >
+                <div
+                  class="absolute inset-0 bg-cover bg-center group-hover:scale-[1.02] transition-transform duration-700"
+                  style="
+                    background-image: url(&quot;assets/images/image.png&quot;);
+                  "
+                ></div>
+                <div
+                  class="absolute inset-0 bg-gradient-to-r from-[#293021]/20 via-transparent to-transparent"
+                ></div>
+                <div
+                  class="absolute inset-0 bg-[#3F4932]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                ></div>
+              </div>
+              <div
+                class="lg:col-span-5 lg:pl-6 lg:pr-2 flex flex-col justify-center"
+              >
+                <span
+                  class="text-xs uppercase tracking-widest text-[#68705B] block mb-2"
+                  >Web Application / Portfolio Platform</span
+                >
+                <h3
+                  class="font-serif-editorial text-3xl md:text-4xl text-[#3F4932] mb-4"
+                >
+                  Profolio
+                </h3>
+                <p
+                  class="text-[#4A4A4A] text-sm md:text-base leading-relaxed mb-6"
+                >
+                  A modern, responsive portfolio platform showcasing a curated
+                  collection of professional, ready-made website templates —
+                  built to help users launch their own site quickly and
+                  effortlessly.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-8">
+                  <span
+                    class="text-xs px-3 py-1 rounded-full border border-[#D2C9B5] text-[#25291F]"
+                    >Next.js</span
+                  >
+                  <span
+                    class="text-xs px-3 py-1 rounded-full border border-[#D2C9B5] text-[#25291F]"
+                    >MongoDB</span
+                  >
+                  <span
+                    class="text-xs px-3 py-1 rounded-full border border-[#D2C9B5] text-[#25291F]"
+                    >Prisma</span
+                  >
+                  <span
+                    class="text-xs px-3 py-1 rounded-full border border-[#D2C9B5] text-[#25291F]"
+                    >NextAuth</span
+                  >
+                </div>
+                <a
+                  href="https://github.com/LatifaAlJarrah/Profolio"
+                  class="interactive-el inline-flex items-center gap-3 text-xs uppercase tracking-widest font-semibold text-[#3F4932] group-hover:text-[#B5A27A] transition-colors"
+                >
                   <span>Explore Case Study</span>
-                  <i data-lucide="arrow-right" class="w-4 h-4 transform group-hover:translate-x-1 transition-transform"></i>
+                  <i
+                    data-lucide="arrow-right"
+                    class="w-4 h-4 transform group-hover:translate-x-1 transition-transform"
+                  ></i>
                 </a>
               </div>
+            </article>
+
+            <!-- Project 02 (Reversed) -->
+            <article
+              class="group grid grid-cols-1 lg:grid-cols-12 gap-8 items-center"
+            >
+              <div class="lg:col-span-5 lg:pr-6 order-2 lg:order-1">
+                <span
+                  class="text-xs uppercase tracking-widest text-[#68705B] block mb-2"
+                  >E-Commerce / Retail</span
+                >
+                <h3
+                  class="font-serif-editorial text-3xl md:text-4xl text-[#3F4932] mb-4"
+                >
+                  Ultimate Furniture
+                </h3>
+                <p
+                  class="text-[#68705B] text-sm md:text-base leading-relaxed mb-6"
+                >
+                  A full-featured furniture and mattress e-commerce store with
+                  category browsing, shopping cart, wishlist, user login, and a
+                  complete checkout flow — built to deliver a smooth shopping
+                  experience across product categories like Living Room,
+                  Bedroom, and Home Office.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-8">
+                  <span
+                    class="text-xs px-3 py-1 rounded-full border border-[#D2C9B5] text-[#25291F]"
+                    >HTML5</span
+                  >
+                  <span
+                    class="text-xs px-3 py-1 rounded-full border border-[#D2C9B5] text-[#25291F]"
+                    >CSS3</span
+                  >
+                  <span
+                    class="text-xs px-3 py-1 rounded-full border border-[#D2C9B5] text-[#25291F]"
+                    >JavaScript</span
+                  >
+                </div>
+                <a
+                  href="https://furniture-store-snowy-ten.vercel.app/"
+                  class="interactive-el inline-flex items-center gap-3 text-xs uppercase tracking-widest font-semibold text-[#3F4932] group-hover:text-[#B5A27A] transition-colors"
+                >
+                  <span>Explore Case Study</span>
+                  <i
+                    data-lucide="arrow-right"
+                    class="w-4 h-4 transform group-hover:translate-x-1 transition-transform"
+                  ></i>
+                </a>
+              </div>
+              <div
+                class="lg:col-span-7 overflow-hidden rounded-2xl border border-[#D2C9B5] relative aspect-[16/10] bg-[#E5DDCA] order-1 lg:order-2"
+              >
+                <img
+                  src="https://furniture-store-snowy-ten.vercel.app/src/assets/images/home-slide1.jpg"
+                  alt="Ultimate Furniture homepage hero section showing a modern living room"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 filter saturate-[0.85] group-hover:saturate-100"
+                  loading="lazy"
+                />
+                <div
+                  class="absolute inset-0 bg-[#3F4932]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                ></div>
+              </div>
+            </article>
+
+            <!-- Project 03 (Full-Width Immersive) -->
+            <article
+              class="group relative rounded-2xl overflow-hidden border border-[#D2C9B5] bg-[#E5DDCA] aspect-[21/9]"
+            >
+              <img
+                src="https://chef-supply-mocha.vercel.app/src/assets/images/banner-image.jpg"
+                alt="High-Quality Kitchen Equipment"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 filter saturate-[0.85] group-hover:saturate-100"
+                loading="lazy"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-[#293021]/90 via-[#293021]/30 to-transparent flex flex-col justify-end p-8 md:p-12"
+              >
+                <span
+                  class="text-xs uppercase tracking-widest text-[#B5A27A] block mb-2"
+                  >E-Commerce / Retail</span
+                >
+                <h3
+                  class="font-serif-editorial text-3xl md:text-5xl text-[#F1EBDD] mb-4"
+                >
+                  Chefsupply
+                </h3>
+                <p
+                  class="text-[#E5DDCA] text-sm md:text-base max-w-2xl leading-relaxed mb-6"
+                >
+                  A commercial kitchen equipment e-commerce store featuring
+                  product categories like charbroilers, ovens, fryers, and prep
+                  tables, seasonal deals, featured products, and a complete shop
+                  experience with FAQ support.
+                </p>
+                <div class="flex items-center justify-between flex-wrap gap-4">
+                  <div class="flex flex-wrap gap-2">
+                    <span
+                      class="text-xs px-3 py-1 rounded-full border border-[#B5A27A]/30 text-[#F1EBDD]"
+                      >HTML5</span
+                    >
+                    <span
+                      class="text-xs px-3 py-1 rounded-full border border-[#B5A27A]/30 text-[#F1EBDD]"
+                      >CSS3</span
+                    >
+                    <span
+                      class="text-xs px-3 py-1 rounded-full border border-[#B5A27A]/30 text-[#F1EBDD]"
+                      >JavaScript</span
+                    >
+                  </div>
+                  <a
+                    href="https://chef-supply-mocha.vercel.app/"
+                    class="interactive-el inline-flex items-center gap-3 text-xs uppercase tracking-widest font-semibold text-[#F1EBDD] hover:text-[#B5A27A] transition-colors"
+                  >
+                    <span>Explore Case Study</span>
+                    <i
+                      data-lucide="arrow-right"
+                      class="w-4 h-4 transform group-hover:translate-x-1 transition-transform"
+                    ></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 4: SKILLS MARQUEE -->
+      <section
+        id="skills"
+        class="py-28 bg-[#3F4932] text-[#F1EBDD] overflow-hidden"
+      >
+        <div class="max-w-7xl mx-auto px-6 mb-16 text-center">
+          <span
+            class="text-xs font-semibold uppercase tracking-[0.2em] text-[#B5A27A] block mb-3"
+            >03 — EXPERTISE</span
+          >
+          <h2 class="font-serif-editorial text-4xl md:text-5xl text-[#F1EBDD]">
+            Tools I Build With
+          </h2>
+        </div>
+
+        <!-- Scrolling Marquee -->
+        <div
+          class="relative w-full overflow-hidden flex whitespace-nowrap py-4 border-y border-[#B5A27A]/20"
+        >
+          <div class="animate-marquee flex gap-8 items-center">
+            <span
+              class="text-2xl md:text-4xl font-serif-editorial italic text-[#B5A27A] px-6"
+              >React.js</span
+            >
+            <span class="text-2xl md:text-4xl font-light tracking-wider px-6"
+              >Next.js</span
+            >
+            <span
+              class="text-2xl md:text-4xl font-serif-editorial italic text-[#B5A27A] px-6"
+              >TypeScript</span
+            >
+            <span class="text-2xl md:text-4xl font-light tracking-wider px-6"
+              >JavaScript</span
+            >
+            <span
+              class="text-2xl md:text-4xl font-serif-editorial italic text-[#B5A27A] px-6"
+              >Tailwind CSS</span
+            >
+            <span class="text-2xl md:text-4xl font-light tracking-wider px-6"
+              >Zustand</span
+            >
+            <span
+              class="text-2xl md:text-4xl font-serif-editorial italic text-[#B5A27A] px-6"
+              >Supabase</span
+            >
+            <span class="text-2xl md:text-4xl font-light tracking-wider px-6"
+              >Node.js</span
+            >
+            <span
+              class="text-2xl md:text-4xl font-serif-editorial italic text-[#B5A27A] px-6"
+              >Figma</span
+            >
+            <span class="text-2xl md:text-4xl font-light tracking-wider px-6"
+              >Git & GitHub</span
+            >
+          </div>
+          <div
+            class="animate-marquee flex gap-8 items-center"
+            aria-hidden="true"
+          >
+            <span
+              class="text-2xl md:text-4xl font-serif-editorial italic text-[#B5A27A] px-6"
+              >React.js</span
+            >
+            <span class="text-2xl md:text-4xl font-light tracking-wider px-6"
+              >Next.js</span
+            >
+            <span
+              class="text-2xl md:text-4xl font-serif-editorial italic text-[#B5A27A] px-6"
+              >TypeScript</span
+            >
+            <span class="text-2xl md:text-4xl font-light tracking-wider px-6"
+              >JavaScript</span
+            >
+            <span
+              class="text-2xl md:text-4xl font-serif-editorial italic text-[#B5A27A] px-6"
+              >Tailwind CSS</span
+            >
+            <span class="text-2xl md:text-4xl font-light tracking-wider px-6"
+              >Zustand</span
+            >
+            <span
+              class="text-2xl md:text-4xl font-serif-editorial italic text-[#B5A27A] px-6"
+              >Supabase</span
+            >
+            <span class="text-2xl md:text-4xl font-light tracking-wider px-6"
+              >Node.js</span
+            >
+            <span
+              class="text-2xl md:text-4xl font-serif-editorial italic text-[#B5A27A] px-6"
+              >Figma</span
+            >
+            <span class="text-2xl md:text-4xl font-light tracking-wider px-6"
+              >Git & GitHub</span
+            >
+          </div>
+        </div>
+
+        <!-- Static Tag Grid -->
+        <div
+          class="max-w-5xl mx-auto px-6 mt-16 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4"
+        >
+          <div
+            class="border border-[#B5A27A]/30 rounded-xl p-4 text-center hover:bg-[#F1EBDD] hover:text-[#3F4932] transition-all duration-300"
+          >
+            <span class="text-xs uppercase tracking-widest block font-medium"
+              >Front-End</span
+            >
+            <span class="text-sm font-serif-editorial mt-1 block"
+              >React & Next.js</span
+            >
+          </div>
+          <div
+            class="border border-[#B5A27A]/30 rounded-xl p-4 text-center hover:bg-[#F1EBDD] hover:text-[#3F4932] transition-all duration-300"
+          >
+            <span class="text-xs uppercase tracking-widest block font-medium"
+              >Language</span
+            >
+            <span class="text-sm font-serif-editorial mt-1 block"
+              >TypeScript</span
+            >
+          </div>
+          <div
+            class="border border-[#B5A27A]/30 rounded-xl p-4 text-center hover:bg-[#F1EBDD] hover:text-[#3F4932] transition-all duration-300"
+          >
+            <span class="text-xs uppercase tracking-widest block font-medium"
+              >Styling</span
+            >
+            <span class="text-sm font-serif-editorial mt-1 block"
+              >Tailwind CSS</span
+            >
+          </div>
+          <div
+            class="border border-[#B5A27A]/30 rounded-xl p-4 text-center hover:bg-[#F1EBDD] hover:text-[#3F4932] transition-all duration-300"
+          >
+            <span class="text-xs uppercase tracking-widest block font-medium"
+              >State</span
+            >
+            <span class="text-sm font-serif-editorial mt-1 block"
+              >Zustand / Hooks</span
+            >
+          </div>
+          <div
+            class="border border-[#B5A27A]/30 rounded-xl p-4 text-center hover:bg-[#F1EBDD] hover:text-[#3F4932] transition-all duration-300"
+          >
+            <span class="text-xs uppercase tracking-widest block font-medium"
+              >Design</span
+            >
+            <span class="text-sm font-serif-editorial mt-1 block"
+              >Figma & UI</span
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 5: ABOUT PREVIEW -->
+      <section id="about" class="py-32 bg-[#F1EBDD] text-[#25291F]">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-6">
+              <span
+                class="text-xs font-semibold uppercase tracking-[0.2em] text-[#68705B] block mb-3"
+                >04 — ABOUT LATIFA</span
+              >
+              <h2
+                class="font-serif-editorial text-4xl md:text-6xl text-[#3F4932] leading-[1.15] mb-8"
+              >
+                Curious by nature.<br />Focused on details.
+              </h2>
+              <div class="w-20 h-[1px] bg-[#D2C9B5] mb-8"></div>
+              <p class="text-[#4A4A4A] text-base leading-relaxed mb-6">
+                I am a front-end developer based in the intersection of design
+                and engineering. My approach borrows from Scandinavian editorial
+                aesthetics and contemporary architecture — creating clean,
+                breathable interfaces where every pixel serves a purpose.
+              </p>
+              <p class="text-[#4A4A4A] text-base leading-relaxed mb-10">
+                When I'm not writing code or refining typographic hierarchies,
+                you'll find me exploring architecture photography, studying
+                natural material textures, or experimenting with generative UI
+                layouts.
+              </p>
+              <a
+                href="#about-detail"
+                class="interactive-el inline-flex items-center gap-3 text-xs uppercase tracking-widest font-semibold text-[#3F4932] hover:text-[#B5A27A] group"
+              >
+                <span>More About Me</span>
+                <i
+                  data-lucide="arrow-right"
+                  class="w-4 h-4 transform group-hover:translate-x-1 transition-transform"
+                ></i>
+              </a>
             </div>
-          </article>
 
+            <div class="lg:col-span-6 relative">
+              <div class="relative mx-auto max-w-md lg:max-w-none">
+                <div
+                  class="aspect-[4/5] rounded-2xl overflow-hidden border border-[#D2C9B5] shadow-sm bg-[#E5DDCA]"
+                >
+                  <img
+                    src="assets/images/latifa.jpeg"
+                    alt="Latifa portrait"
+                    class="w-full h-full object-cover filter saturate-[0.85]"
+                    loading="lazy"
+                  />
+                </div>
+                <div
+                  class="absolute -bottom-6 -left-6 bg-[#3F4932] text-[#F1EBDD] p-6 rounded-2xl max-w-xs shadow-lg hidden sm:block"
+                >
+                  <p class="font-serif-editorial italic text-lg mb-1">
+                    "Good design isn't decoration — it's the difference between
+                    a user struggling and a user not even noticing."
+                  </p>
+                  <span
+                    class="text-[10px] uppercase tracking-widest text-[#B5A27A]"
+                    >— LATIFA</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- SECTION 4: SKILLS MARQUEE -->
-    <section id="skills" class="py-28 bg-[#3F4932] text-[#F1EBDD] overflow-hidden">
-      <div class="max-w-7xl mx-auto px-6 mb-16 text-center">
-        <span class="text-xs font-semibold uppercase tracking-[0.2em] text-[#B5A27A] block mb-3">03 — EXPERTISE</span>
-        <h2 class="font-serif-editorial text-4xl md:text-5xl text-[#F1EBDD]">Tools I Build With</h2>
-      </div>
+      <!-- SECTION 6: PROJECT CASE STUDY HIGHLIGHT -->
+      <section id="project-detail" class="py-32 bg-[#E5DDCA] text-[#25291F]">
+        <div class="max-w-5xl mx-auto px-6">
+          <span
+            class="text-xs font-semibold uppercase tracking-[0.2em] text-[#68705B] block mb-3"
+            >05 — CASE STUDY</span
+          >
+          <h2
+            class="font-serif-editorial text-4xl md:text-6xl text-[#3F4932] mb-6"
+          >
+            Profolio: A Portfolio Template Marketplace
+          </h2>
+          <p class="text-lg text-[#68705B] leading-relaxed mb-12">
+            An in-depth look at how I built a portfolio platform showcasing
+            ready-made website templates using Next.js, MongoDB, and Prisma to
+            make template discovery simple, polished, and fast.
+          </p>
 
-      <!-- Scrolling Marquee -->
-      <div class="relative w-full overflow-hidden flex whitespace-nowrap py-4 border-y border-[#B5A27A]/20">
-        <div class="animate-marquee flex gap-8 items-center">
-          <span class="text-2xl md:text-4xl font-serif-editorial italic text-[#B5A27A] px-6">React.js</span>
-          <span class="text-2xl md:text-4xl font-light tracking-wider px-6">Next.js</span>
-          <span class="text-2xl md:text-4xl font-serif-editorial italic text-[#B5A27A] px-6">TypeScript</span>
-          <span class="text-2xl md:text-4xl font-light tracking-wider px-6">JavaScript</span>
-          <span class="text-2xl md:text-4xl font-serif-editorial italic text-[#B5A27A] px-6">Tailwind CSS</span>
-          <span class="text-2xl md:text-4xl font-light tracking-wider px-6">Zustand</span>
-          <span class="text-2xl md:text-4xl font-serif-editorial italic text-[#B5A27A] px-6">Supabase</span>
-          <span class="text-2xl md:text-4xl font-light tracking-wider px-6">Node.js</span>
-          <span class="text-2xl md:text-4xl font-serif-editorial italic text-[#B5A27A] px-6">Figma</span>
-          <span class="text-2xl md:text-4xl font-light tracking-wider px-6">Git & GitHub</span>
-        </div>
-        <div class="animate-marquee flex gap-8 items-center" aria-hidden="true">
-          <span class="text-2xl md:text-4xl font-serif-editorial italic text-[#B5A27A] px-6">React.js</span>
-          <span class="text-2xl md:text-4xl font-light tracking-wider px-6">Next.js</span>
-          <span class="text-2xl md:text-4xl font-serif-editorial italic text-[#B5A27A] px-6">TypeScript</span>
-          <span class="text-2xl md:text-4xl font-light tracking-wider px-6">JavaScript</span>
-          <span class="text-2xl md:text-4xl font-serif-editorial italic text-[#B5A27A] px-6">Tailwind CSS</span>
-          <span class="text-2xl md:text-4xl font-light tracking-wider px-6">Zustand</span>
-          <span class="text-2xl md:text-4xl font-serif-editorial italic text-[#B5A27A] px-6">Supabase</span>
-          <span class="text-2xl md:text-4xl font-light tracking-wider px-6">Node.js</span>
-          <span class="text-2xl md:text-4xl font-serif-editorial italic text-[#B5A27A] px-6">Figma</span>
-          <span class="text-2xl md:text-4xl font-light tracking-wider px-6">Git & GitHub</span>
-        </div>
-      </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+            <div class="bg-[#F1EBDD] p-8 rounded-2xl border border-[#D2C9B5]">
+              <h3
+                class="text-xs uppercase tracking-widest font-semibold text-[#3F4932] mb-3"
+              >
+                The Challenge
+              </h3>
+              <p class="text-sm text-[#4A4A4A] leading-relaxed">
+                Many users wanted a simple way to browse polished website
+                templates, compare options quickly, and choose a starting point
+                without building from scratch. Profolio was created to make that
+                discovery process feel clear, curated, and approachable.
+              </p>
+            </div>
+            <div class="bg-[#F1EBDD] p-8 rounded-2xl border border-[#D2C9B5]">
+              <h3
+                class="text-xs uppercase tracking-widest font-semibold text-[#3F4932] mb-3"
+              >
+                The Approach
+              </h3>
+              <p class="text-sm text-[#4A4A4A] leading-relaxed">
+                I used Next.js to structure the platform and deliver a modern,
+                responsive experience, while MongoDB and Prisma handled the data
+                model for templates and user-facing product content. NextAuth
+                also supported authentication flows, keeping the experience
+                streamlined for both browsing and account-based features.
+              </p>
+            </div>
+          </div>
 
-      <!-- Static Tag Grid -->
-      <div class="max-w-5xl mx-auto px-6 mt-16 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
-        <div class="border border-[#B5A27A]/30 rounded-xl p-4 text-center hover:bg-[#F1EBDD] hover:text-[#3F4932] transition-all duration-300">
-          <span class="text-xs uppercase tracking-widest block font-medium">Front-End</span>
-          <span class="text-sm font-serif-editorial mt-1 block">React & Next.js</span>
-        </div>
-        <div class="border border-[#B5A27A]/30 rounded-xl p-4 text-center hover:bg-[#F1EBDD] hover:text-[#3F4932] transition-all duration-300">
-          <span class="text-xs uppercase tracking-widest block font-medium">Language</span>
-          <span class="text-sm font-serif-editorial mt-1 block">TypeScript</span>
-        </div>
-        <div class="border border-[#B5A27A]/30 rounded-xl p-4 text-center hover:bg-[#F1EBDD] hover:text-[#3F4932] transition-all duration-300">
-          <span class="text-xs uppercase tracking-widest block font-medium">Styling</span>
-          <span class="text-sm font-serif-editorial mt-1 block">Tailwind CSS</span>
-        </div>
-        <div class="border border-[#B5A27A]/30 rounded-xl p-4 text-center hover:bg-[#F1EBDD] hover:text-[#3F4932] transition-all duration-300">
-          <span class="text-xs uppercase tracking-widest block font-medium">State</span>
-          <span class="text-sm font-serif-editorial mt-1 block">Zustand / Hooks</span>
-        </div>
-        <div class="border border-[#B5A27A]/30 rounded-xl p-4 text-center hover:bg-[#F1EBDD] hover:text-[#3F4932] transition-all duration-300">
-          <span class="text-xs uppercase tracking-widest block font-medium">Design</span>
-          <span class="text-sm font-serif-editorial mt-1 block">Figma & UI</span>
-        </div>
-      </div>
-    </section>
+          <div
+            class="rounded-2xl overflow-hidden border border-[#D2C9B5] aspect-[16/9] mb-12 bg-[#F1EBDD]"
+          >
+            <img
+              src="assets/images/image.png"
+              alt="Profolio homepage and template gallery interface"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
 
-    <!-- SECTION 5: ABOUT PREVIEW -->
-    <section id="about" class="py-32 bg-[#F1EBDD] text-[#25291F]">
-      <div class="max-w-7xl mx-auto px-6">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          <div class="lg:col-span-6">
-            <span class="text-xs font-semibold uppercase tracking-[0.2em] text-[#68705B] block mb-3">04 — ABOUT LATIFA</span>
-            <h2 class="font-serif-editorial text-4xl md:text-6xl text-[#3F4932] leading-[1.15] mb-8">
-              Curious by nature.<br>Focused on details.
-            </h2>
-            <div class="w-20 h-[1px] bg-[#D2C9B5] mb-8"></div>
-            <p class="text-[#68705B] text-base leading-relaxed mb-6">
-              I am a front-end developer based in the intersection of design and engineering. My approach borrows from Scandinavian editorial aesthetics and contemporary architecture — creating clean, breathable interfaces where every pixel serves a purpose.
-            </p>
-            <p class="text-[#68705B] text-base leading-relaxed mb-10">
-              When I'm not writing code or refining typographic hierarchies, you'll find me exploring architecture photography, studying natural material textures, or experimenting with generative UI layouts.
-            </p>
-            <a href="#about-detail" class="interactive-el inline-flex items-center gap-3 text-xs uppercase tracking-widest font-semibold text-[#3F4932] hover:text-[#B5A27A] group">
-              <span>More About Me</span>
-              <i data-lucide="arrow-right" class="w-4 h-4 transform group-hover:translate-x-1 transition-transform"></i>
+          <div class="text-center">
+            <a
+              href="#works"
+              class="interactive-el inline-flex items-center gap-2 text-xs uppercase tracking-widest font-semibold text-[#3F4932] hover:text-[#B5A27A]"
+            >
+              <i data-lucide="arrow-left" class="w-4 h-4"></i>
+              <span>Back to All Works</span>
             </a>
           </div>
+        </div>
+      </section>
 
-          <div class="lg:col-span-6 relative">
-            <div class="relative mx-auto max-w-md lg:max-w-none">
-              <div class="aspect-[4/5] rounded-2xl overflow-hidden border border-[#D2C9B5] shadow-sm bg-[#E5DDCA]">
-                <img src="https://picsum.photos/seed/13/800/1000" alt="Latifa portrait placeholder" class="w-full h-full object-cover filter saturate-[0.85]" loading="lazy">
+      <!-- SECTION 7: CONTACT -->
+      <section id="contact" class="py-32 bg-[#3F4932] text-[#F1EBDD] relative">
+        <div class="max-w-4xl mx-auto px-6">
+          <div class="text-center mb-16">
+            <span
+              class="text-xs font-semibold uppercase tracking-[0.2em] text-[#B5A27A] block mb-3"
+              >06 — GET IN TOUCH</span
+            >
+            <h2
+              class="font-serif-editorial text-4xl md:text-6xl text-[#F1EBDD] mb-4"
+            >
+              Let's create something meaningful.
+            </h2>
+            <p
+              class="text-[#E5DDCA]/80 text-sm md:text-base max-w-lg mx-auto leading-relaxed"
+            >
+              Have a project, idea or opportunity in mind? I'd love to hear
+              about it. Currently open to exciting opportunities and freelance
+              projects.
+            </p>
+          </div>
+
+          <form
+            id="contactForm"
+            class="space-y-6 max-w-2xl mx-auto bg-[#293021] p-8 md:p-12 rounded-2xl border border-[#B5A27A]/30"
+          >
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label
+                  for="name"
+                  class="block text-xs uppercase tracking-widest text-[#B5A27A] mb-2"
+                  >Your Name</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  required
+                  class="w-full bg-[#3F4932]/50 border border-[#B5A27A]/30 rounded-lg px-4 py-3 text-[#F1EBDD] focus:outline-none focus:border-[#B5A27A] transition-colors text-sm"
+                  placeholder="Latifa"
+                />
               </div>
-              <div class="absolute -bottom-6 -left-6 bg-[#3F4932] text-[#F1EBDD] p-6 rounded-2xl max-w-xs shadow-lg hidden sm:block">
-                <p class="font-serif-editorial italic text-lg mb-1">"Simplicity is the ultimate sophistication."</p>
-                <span class="text-[10px] uppercase tracking-widest text-[#B5A27A]">— Leonardo da Vinci</span>
+              <div>
+                <label
+                  for="email"
+                  class="block text-xs uppercase tracking-widest text-[#B5A27A] mb-2"
+                  >Your Email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  required
+                  class="w-full bg-[#3F4932]/50 border border-[#B5A27A]/30 rounded-lg px-4 py-3 text-[#F1EBDD] focus:outline-none focus:border-[#B5A27A] transition-colors text-sm"
+                  placeholder="hello@latifa.dev"
+                />
               </div>
             </div>
+            <div>
+              <label
+                for="subject"
+                class="block text-xs uppercase tracking-widest text-[#B5A27A] mb-2"
+                >Subject</label
+              >
+              <input
+                type="text"
+                id="subject"
+                required
+                class="w-full bg-[#3F4932]/50 border border-[#B5A27A]/30 rounded-lg px-4 py-3 text-[#F1EBDD] focus:outline-none focus:border-[#B5A27A] transition-colors text-sm"
+                placeholder="Project Inquiry / Freelance"
+              />
+            </div>
+            <div>
+              <label
+                for="message"
+                class="block text-xs uppercase tracking-widest text-[#B5A27A] mb-2"
+                >Message</label
+              >
+              <textarea
+                id="message"
+                rows="5"
+                required
+                class="w-full bg-[#3F4932]/50 border border-[#B5A27A]/30 rounded-lg px-4 py-3 text-[#F1EBDD] focus:outline-none focus:border-[#B5A27A] transition-colors text-sm resize-none"
+                placeholder="Tell me about your vision..."
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="interactive-el w-full py-4 bg-[#F1EBDD] text-[#25291F] text-xs font-semibold uppercase tracking-widest rounded-lg hover:bg-[#B5A27A] hover:text-[#25291F] transition-all duration-300"
+            >
+              Send Message
+            </button>
+          </form>
+
+          <!-- Contact Links / Details -->
+          <div
+            class="mt-16 flex flex-wrap justify-center items-center gap-8 text-sm text-[#E5DDCA]"
+          >
+            <a
+              href="mailto:hello@latifa.dev"
+              class="interactive-el hover:text-[#B5A27A] transition-colors flex items-center gap-2"
+            >
+              <i data-lucide="mail" class="w-4 h-4 text-[#B5A27A]"></i>
+              <span>hello@latifa.dev</span>
+            </a>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="interactive-el hover:text-[#B5A27A] transition-colors flex items-center gap-2"
+            >
+              <i data-lucide="linkedin" class="w-4 h-4 text-[#B5A27A]"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a
+              href="https://github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="interactive-el hover:text-[#B5A27A] transition-colors flex items-center gap-2"
+            >
+              <i data-lucide="github" class="w-4 h-4 text-[#B5A27A]"></i>
+              <span>GitHub</span>
+            </a>
           </div>
         </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer
+      class="bg-[#293021] text-[#F1EBDD] py-20 relative overflow-hidden border-t border-[#3F4932]"
+    >
+      <!-- Oversized watermark background -->
+      <div
+        class="absolute inset-0 flex items-center justify-center pointer-events-none select-none opacity-[0.03]"
+      >
+        <span
+          class="font-serif-editorial text-[22vw] tracking-wider text-[#F1EBDD]"
+          >LATIFA</span
+        >
       </div>
-    </section>
 
-    <!-- SECTION 6: PROJECT CASE STUDY HIGHLIGHT -->
-    <section id="project-detail" class="py-32 bg-[#E5DDCA] text-[#25291F]">
-      <div class="max-w-5xl mx-auto px-6">
-        <span class="text-xs font-semibold uppercase tracking-[0.2em] text-[#68705B] block mb-3">05 — CASE STUDY</span>
-        <h2 class="font-serif-editorial text-4xl md:text-6xl text-[#3F4932] mb-6">Atelier Sanctuary: Architectural Precision in Web UI</h2>
-        <p class="text-lg text-[#68705B] leading-relaxed mb-12">
-          An in-depth look at how we built a lightning-fast web experience with fluid image transitions and typography-driven navigation.
-        </p>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-          <div class="bg-[#F1EBDD] p-8 rounded-2xl border border-[#D2C9B5]">
-            <h3 class="text-xs uppercase tracking-widest font-semibold text-[#3F4932] mb-3">The Challenge</h3>
-            <p class="text-sm text-[#68705B] leading-relaxed">
-              High-end architectural portfolios often suffer from sluggish media loading and bloated scripts. The goal was to build a visually luxurious platform that loads in under one second without sacrificing image fidelity or smooth motion.
-            </p>
+      <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <div
+          class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16"
+        >
+          <div>
+            <span
+              class="text-xs font-semibold uppercase tracking-[0.2em] text-[#B5A27A] block mb-3"
+              >FRONT-END DEVELOPER</span
+            >
+            <h2
+              class="font-serif-editorial text-4xl md:text-7xl text-[#F1EBDD]"
+            >
+              LET'S WORK<br />TOGETHER.
+            </h2>
           </div>
-          <div class="bg-[#F1EBDD] p-8 rounded-2xl border border-[#D2C9B5]">
-            <h3 class="text-xs uppercase tracking-widest font-semibold text-[#3F4932] mb-3">The Approach</h3>
-            <p class="text-sm text-[#68705B] leading-relaxed">
-              We implemented progressive image loading pipelines, CSS custom variables for consistent olive/beige styling, and a minimal state management architecture using Zustand for seamless page interactions.
-            </p>
+          <div class="mt-8 md:mt-0">
+            <a
+              href="mailto:hello@latifa.dev"
+              class="interactive-el px-8 py-4 bg-[#3F4932] text-[#F1EBDD] text-xs font-semibold uppercase tracking-widest rounded-full hover:bg-[#B5A27A] hover:text-[#25291F] transition-all duration-300 inline-block"
+            >
+              Start a Conversation
+            </a>
           </div>
         </div>
 
-        <div class="rounded-2xl overflow-hidden border border-[#D2C9B5] aspect-[16/9] mb-12 bg-[#F1EBDD]">
-          <img src="https://picsum.photos/seed/14/1400/800" alt="Case study showcase" class="w-full h-full object-cover" loading="lazy">
-        </div>
-
-        <div class="text-center">
-          <a href="#works" class="interactive-el inline-flex items-center gap-2 text-xs uppercase tracking-widest font-semibold text-[#3F4932] hover:text-[#B5A27A]">
-            <i data-lucide="arrow-left" class="w-4 h-4"></i>
-            <span>Back to All Works</span>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 7: CONTACT -->
-    <section id="contact" class="py-32 bg-[#3F4932] text-[#F1EBDD] relative">
-      <div class="max-w-4xl mx-auto px-6">
-        <div class="text-center mb-16">
-          <span class="text-xs font-semibold uppercase tracking-[0.2em] text-[#B5A27A] block mb-3">06 — GET IN TOUCH</span>
-          <h2 class="font-serif-editorial text-4xl md:text-6xl text-[#F1EBDD] mb-4">Let's create something meaningful.</h2>
-          <p class="text-[#E5DDCA]/80 text-sm md:text-base max-w-lg mx-auto leading-relaxed">
-            Have a project, idea or opportunity in mind? I'd love to hear about it. Currently open to exciting opportunities and freelance projects.
+        <div
+          class="pt-8 border-t border-[#3F4932] flex flex-col md:flex-row items-center justify-between text-xs text-[#E5DDCA]/60 gap-4"
+        >
+          <p>
+            © <span id="currentYear"></span> Latifa. All rights reserved.
+            Crafted with olive & beige precision.
           </p>
-        </div>
-
-        <form id="contactForm" class="space-y-6 max-w-2xl mx-auto bg-[#293021] p-8 md:p-12 rounded-2xl border border-[#B5A27A]/30">
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div>
-              <label for="name" class="block text-xs uppercase tracking-widest text-[#B5A27A] mb-2">Your Name</label>
-              <input type="text" id="name" required class="w-full bg-[#3F4932]/50 border border-[#B5A27A]/30 rounded-lg px-4 py-3 text-[#F1EBDD] focus:outline-none focus:border-[#B5A27A] transition-colors text-sm" placeholder="Latifa">
-            </div>
-            <div>
-              <label for="email" class="block text-xs uppercase tracking-widest text-[#B5A27A] mb-2">Your Email</label>
-              <input type="email" id="email" required class="w-full bg-[#3F4932]/50 border border-[#B5A27A]/30 rounded-lg px-4 py-3 text-[#F1EBDD] focus:outline-none focus:border-[#B5A27A] transition-colors text-sm" placeholder="hello@latifa.dev">
-            </div>
+          <div class="flex gap-6 uppercase tracking-widest">
+            <a href="#home" class="hover:text-[#B5A27A] transition-colors"
+              >Home</a
+            >
+            <a href="#about" class="hover:text-[#B5A27A] transition-colors"
+              >About</a
+            >
+            <a href="#works" class="hover:text-[#B5A27A] transition-colors"
+              >Works</a
+            >
+            <a href="#contact" class="hover:text-[#B5A27A] transition-colors"
+              >Contact</a
+            >
           </div>
-          <div>
-            <label for="subject" class="block text-xs uppercase tracking-widest text-[#B5A27A] mb-2">Subject</label>
-            <input type="text" id="subject" required class="w-full bg-[#3F4932]/50 border border-[#B5A27A]/30 rounded-lg px-4 py-3 text-[#F1EBDD] focus:outline-none focus:border-[#B5A27A] transition-colors text-sm" placeholder="Project Inquiry / Freelance">
-          </div>
-          <div>
-            <label for="message" class="block text-xs uppercase tracking-widest text-[#B5A27A] mb-2">Message</label>
-            <textarea id="message" rows="5" required class="w-full bg-[#3F4932]/50 border border-[#B5A27A]/30 rounded-lg px-4 py-3 text-[#F1EBDD] focus:outline-none focus:border-[#B5A27A] transition-colors text-sm resize-none" placeholder="Tell me about your vision..."></textarea>
-          </div>
-          <button type="submit" class="interactive-el w-full py-4 bg-[#F1EBDD] text-[#25291F] text-xs font-semibold uppercase tracking-widest rounded-lg hover:bg-[#B5A27A] hover:text-[#25291F] transition-all duration-300">
-            Send Message
-          </button>
-        </form>
-
-        <!-- Contact Links / Details -->
-        <div class="mt-16 flex flex-wrap justify-center items-center gap-8 text-sm text-[#E5DDCA]">
-          <a href="mailto:hello@latifa.dev" class="interactive-el hover:text-[#B5A27A] transition-colors flex items-center gap-2">
-            <i data-lucide="mail" class="w-4 h-4 text-[#B5A27A]"></i>
-            <span>hello@latifa.dev</span>
-          </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="interactive-el hover:text-[#B5A27A] transition-colors flex items-center gap-2">
-            <i data-lucide="linkedin" class="w-4 h-4 text-[#B5A27A]"></i>
-            <span>LinkedIn</span>
-          </a>
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="interactive-el hover:text-[#B5A27A] transition-colors flex items-center gap-2">
-            <i data-lucide="github" class="w-4 h-4 text-[#B5A27A]"></i>
-            <span>GitHub</span>
-          </a>
         </div>
       </div>
-    </section>
+    </footer>
 
-  </main>
-
-  <!-- Footer -->
-  <footer class="bg-[#293021] text-[#F1EBDD] py-20 relative overflow-hidden border-t border-[#3F4932]">
-    <!-- Oversized watermark background -->
-    <div class="absolute inset-0 flex items-center justify-center pointer-events-none select-none opacity-[0.03]">
-      <span class="font-serif-editorial text-[22vw] tracking-wider text-[#F1EBDD]">LATIFA</span>
+    <!-- Custom Toast Notification -->
+    <div
+      id="toast"
+      class="fixed bottom-6 right-6 z-50 bg-[#293021] text-[#F1EBDD] px-6 py-4 rounded-xl border border-[#B5A27A]/40 shadow-xl transform translate-y-16 opacity-0 transition-all duration-300 flex items-center gap-3"
+    >
+      <i data-lucide="check-circle" class="w-5 h-5 text-[#B5A27A]"></i>
+      <span id="toastText" class="text-xs uppercase tracking-widest"
+        >Message sent successfully.</span
+      >
     </div>
 
-    <div class="max-w-7xl mx-auto px-6 relative z-10">
-      <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16">
-        <div>
-          <span class="text-xs font-semibold uppercase tracking-[0.2em] text-[#B5A27A] block mb-3">FRONT-END DEVELOPER</span>
-          <h2 class="font-serif-editorial text-4xl md:text-7xl text-[#F1EBDD]">LET'S WORK<br>TOGETHER.</h2>
-        </div>
-        <div class="mt-8 md:mt-0">
-          <a href="mailto:hello@latifa.dev" class="interactive-el px-8 py-4 bg-[#3F4932] text-[#F1EBDD] text-xs font-semibold uppercase tracking-widest rounded-full hover:bg-[#B5A27A] hover:text-[#25291F] transition-all duration-300 inline-block">
-            Start a Conversation
-          </a>
-        </div>
-      </div>
+    <!-- Lucide Icons Initialization -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        lucide.createIcons();
+        document.getElementById("currentYear").textContent =
+          new Date().getFullYear();
+      });
+    </script>
 
-      <div class="pt-8 border-t border-[#3F4932] flex flex-col md:flex-row items-center justify-between text-xs text-[#E5DDCA]/60 gap-4">
-        <p>© <span id="currentYear"></span> Latifa. All rights reserved. Crafted with olive & beige precision.</p>
-        <div class="flex gap-6 uppercase tracking-widest">
-          <a href="#home" class="hover:text-[#B5A27A] transition-colors">Home</a>
-          <a href="#about" class="hover:text-[#B5A27A] transition-colors">About</a>
-          <a href="#works" class="hover:text-[#B5A27A] transition-colors">Works</a>
-          <a href="#contact" class="hover:text-[#B5A27A] transition-colors">Contact</a>
-        </div>
-      </div>
-    </div>
-  </footer>
+    <!-- Custom Interaction Scripts -->
+    <script>
+      // Custom Cursor
+      const cursor = document.getElementById("cursor");
+      const follower = document.getElementById("cursor-follower");
+      let mouseX = 0,
+        mouseY = 0;
+      let cursorX = 0,
+        cursorY = 0;
+      let followerX = 0,
+        followerY = 0;
 
-  <!-- Custom Toast Notification -->
-  <div id="toast" class="fixed bottom-6 right-6 z-50 bg-[#293021] text-[#F1EBDD] px-6 py-4 rounded-xl border border-[#B5A27A]/40 shadow-xl transform translate-y-16 opacity-0 transition-all duration-300 flex items-center gap-3">
-    <i data-lucide="check-circle" class="w-5 h-5 text-[#B5A27A]"></i>
-    <span id="toastText" class="text-xs uppercase tracking-widest">Message sent successfully.</span>
-  </div>
+      window.addEventListener("mousemove", (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+      });
 
-  <!-- Lucide Icons Initialization -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      lucide.createIcons();
-      document.getElementById('currentYear').textContent = new Date().getFullYear();
-    });
-  </script>
+      function renderCursor() {
+        cursorX += (mouseX - cursorX) * 0.2;
+        cursorY += (mouseY - cursorY) * 0.2;
+        followerX += (mouseX - followerX) * 0.1;
+        followerY += (mouseY - followerY) * 0.1;
 
-  <!-- Custom Interaction Scripts -->
-  <script>
-    // Custom Cursor
-    const cursor = document.getElementById('cursor');
-    const follower = document.getElementById('cursor-follower');
-    let mouseX = 0, mouseY = 0;
-    let cursorX = 0, cursorY = 0;
-    let followerX = 0, followerY = 0;
-
-    window.addEventListener('mousemove', (e) => {
-      mouseX = e.clientX;
-      mouseY = e.clientY;
-    });
-
-    function renderCursor() {
-      cursorX += (mouseX - cursorX) * 0.2;
-      cursorY += (mouseY - cursorY) * 0.2;
-      followerX += (mouseX - followerX) * 0.1;
-      followerY += (mouseY - followerY) * 0.1;
-
-      if (cursor && follower) {
-        cursor.style.transform = `translate(${cursorX}px, ${cursorY}px) translate(-50%, -50%)`;
-        follower.style.transform = `translate(${followerX}px, ${followerY}px) translate(-50%, -50%)`;
+        if (cursor && follower) {
+          cursor.style.transform = `translate(${cursorX}px, ${cursorY}px) translate(-50%, -50%)`;
+          follower.style.transform = `translate(${followerX}px, ${followerY}px) translate(-50%, -50%)`;
+        }
+        requestAnimationFrame(renderCursor);
       }
       requestAnimationFrame(renderCursor);
-    }
-    requestAnimationFrame(renderCursor);
 
-    // Interactive Hover expansion
-    document.querySelectorAll('.interactive-el, a, button').forEach(el => {
-      el.addEventListener('mouseenter', () => {
-        if (follower) {
-          follower.style.width = '60px';
-          follower.style.height = '60px';
-          follower.style.borderColor = '#B5A27A';
-        }
-      });
-      el.addEventListener('mouseleave', () => {
-        if (follower) {
-          follower.style.width = '40px';
-          follower.style.height = '40px';
-          follower.style.borderColor = 'rgba(63, 73, 50, 0.4)';
-        }
-      });
-    });
-
-    // Mobile Menu Toggle
-    const menuBtn = document.getElementById('menuBtn');
-    const mobileMenu = document.getElementById('mobileMenu');
-    const mobileLinks = document.querySelectorAll('.mobile-link');
-
-    function toggleMenu() {
-      const isOpen = mobileMenu.classList.contains('translate-x-full');
-      if (isOpen) {
-        mobileMenu.classList.remove('translate-x-full');
-        mobileMenu.classList.add('translate-x-0');
-      } else {
-        mobileMenu.classList.add('translate-x-full');
-        mobileMenu.classList.remove('translate-x-0');
-      }
-    }
-
-    if (menuBtn) menuBtn.addEventListener('click', toggleMenu);
-    mobileLinks.forEach(link => {
-      link.addEventListener('click', toggleMenu);
-    });
-
-    // Navbar Scroll Effect
-    const navbar = document.getElementById('navbar');
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 40) {
-        navbar.classList.add('bg-[#F1EBDD]/90', 'backdrop-blur-md', 'shadow-sm', 'border-b', 'border-[#D2C9B5]/60');
-      } else {
-        navbar.classList.remove('bg-[#F1EBDD]/90', 'backdrop-blur-md', 'shadow-sm', 'border-b', 'border-[#D2C9B5]/60');
-      }
-    });
-
-    // Custom Toast Form Handler
-    const contactForm = document.getElementById('contactForm');
-    const toast = document.getElementById('toast');
-    const toastText = document.getElementById('toastText');
-
-    function showToast(msg) {
-      if (toastText) toastText.textContent = msg;
-      toast.classList.remove('translate-y-16', 'opacity-0');
-      setTimeout(() => {
-        toast.classList.add('translate-y-16', 'opacity-0');
-      }, 3500);
-    }
-
-    if (contactForm) {
-      contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        showToast('Message sent successfully. Thank you!');
-        contactForm.reset();
-      });
-    }
-  </script>
-
-  <!-- Motion Canvas Engine -->
-  <script>
-  (function() {
-    const FRAMES = ["../frames/frame_0000.webp", "../frames/frame_0001.webp", "../frames/frame_0002.webp", "../frames/frame_0003.webp", "../frames/frame_0004.webp", "../frames/frame_0005.webp", "../frames/frame_0006.webp", "../frames/frame_0007.webp", "../frames/frame_0008.webp", "../frames/frame_0009.webp", "../frames/frame_0010.webp", "../frames/frame_0011.webp", "../frames/frame_0012.webp", "../frames/frame_0013.webp", "../frames/frame_0014.webp", "../frames/frame_0015.webp", "../frames/frame_0016.webp", "../frames/frame_0017.webp", "../frames/frame_0018.webp", "../frames/frame_0019.webp", "../frames/frame_0020.webp", "../frames/frame_0021.webp", "../frames/frame_0022.webp", "../frames/frame_0023.webp", "../frames/frame_0024.webp", "../frames/frame_0025.webp", "../frames/frame_0026.webp", "../frames/frame_0027.webp", "../frames/frame_0028.webp", "../frames/frame_0029.webp", "../frames/frame_0030.webp", "../frames/frame_0031.webp", "../frames/frame_0032.webp", "../frames/frame_0033.webp", "../frames/frame_0034.webp", "../frames/frame_0035.webp", "../frames/frame_0036.webp", "../frames/frame_0037.webp", "../frames/frame_0038.webp", "../frames/frame_0039.webp", "../frames/frame_0040.webp", "../frames/frame_0041.webp", "../frames/frame_0042.webp", "../frames/frame_0043.webp", "../frames/frame_0044.webp", "../frames/frame_0045.webp", "../frames/frame_0046.webp", "../frames/frame_0047.webp", "../frames/frame_0048.webp", "../frames/frame_0049.webp", "../frames/frame_0050.webp", "../frames/frame_0051.webp", "../frames/frame_0052.webp", "../frames/frame_0053.webp", "../frames/frame_0054.webp", "../frames/frame_0055.webp", "../frames/frame_0056.webp", "../frames/frame_0057.webp", "../frames/frame_0058.webp", "../frames/frame_0059.webp", "../frames/frame_0060.webp", "../frames/frame_0061.webp", "../frames/frame_0062.webp", "../frames/frame_0063.webp", "../frames/frame_0064.webp", "../frames/frame_0065.webp", "../frames/frame_0066.webp", "../frames/frame_0067.webp", "../frames/frame_0068.webp", "../frames/frame_0069.webp", "../frames/frame_0070.webp", "../frames/frame_0071.webp", "../frames/frame_0072.webp", "../frames/frame_0073.webp", "../frames/frame_0074.webp", "../frames/frame_0075.webp", "../frames/frame_0076.webp", "../frames/frame_0077.webp", "../frames/frame_0078.webp", "../frames/frame_0079.webp", "../frames/frame_0080.webp", "../frames/frame_0081.webp", "../frames/frame_0082.webp", "../frames/frame_0083.webp", "../frames/frame_0084.webp", "../frames/frame_0085.webp", "../frames/frame_0086.webp", "../frames/frame_0087.webp", "../frames/frame_0088.webp", "../frames/frame_0089.webp"];
-    const TOTAL = FRAMES.length;
-    const MIN_SHOW = 25;
-    let images = [], cur = -1, ready = false, loaded = 0, currentP = 0, targetP = 0;
-    const canvas = document.getElementById('motionCanvas');
-    const ctx = canvas ? canvas.getContext('2d') : null;
-    const section = document.getElementById('motionSection');
-    // if (section) section.style.height = (TOTAL * 4) + 'vh';
-
-    // Hero image (initial/fallback) — place your file at assets/images/latifa.jpeg
-    const heroImg = new Image();
-    heroImg.src = 'assets/images/latifa.jpeg';
-    function drawHero() {
-      if (!ctx || !heroImg.complete) return;
-      const s = Math.max(canvas.width / heroImg.naturalWidth, canvas.height / heroImg.naturalHeight);
-      const w = heroImg.naturalWidth * s, h = heroImg.naturalHeight * s;
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      ctx.drawImage(heroImg, (canvas.width - w) / 2, (canvas.height - h) / 2, w, h);
-    }
-    heroImg.onload = function() { if (!ready) drawHero(); };
-
-    function nearest(i) {
-      while (i >= 0 && (!images[i] || !images[i].naturalWidth)) i--;
-      return i;
-    }
-
-    function draw(idx) {
-      idx = nearest(idx);
-      if (idx < 0 || !ctx) return;
-      const img = images[idx];
-      const s = Math.max(canvas.width/img.naturalWidth, canvas.height/img.naturalHeight);
-      const w = img.naturalWidth*s, h = img.naturalHeight*s;
-      ctx.clearRect(0,0,canvas.width,canvas.height);
-      ctx.drawImage(img,(canvas.width-w)/2,(canvas.height-h)/2,w,h);
-    }
-
-    function preload() {
-      if (!TOTAL) { hideLoader(); ready=true; rAF(); return; }
-      images = new Array(TOTAL).fill(null);
-      FRAMES.forEach((src, i) => {
-        const img = new Image();
-        img.onload = img.onerror = () => {
-          images[i] = img; loaded++;
-          const lb = document.getElementById('lb');
-          const lt = document.getElementById('lt');
-          if (lb) lb.style.width = Math.round(loaded/TOTAL*100)+'%';
-          if (lt) lt.textContent = 'Loading '+Math.round(loaded/TOTAL*100)+'%';
-          if (loaded >= MIN_SHOW && !ready) {
-            ready = true; hideLoader(); resize(); cur=0; draw(0); rAF();
+      // Interactive Hover expansion
+      document.querySelectorAll(".interactive-el, a, button").forEach((el) => {
+        el.addEventListener("mouseenter", () => {
+          if (follower) {
+            follower.style.width = "60px";
+            follower.style.height = "60px";
+            follower.style.borderColor = "#B5A27A";
           }
+        });
+        el.addEventListener("mouseleave", () => {
+          if (follower) {
+            follower.style.width = "40px";
+            follower.style.height = "40px";
+            follower.style.borderColor = "rgba(63, 73, 50, 0.4)";
+          }
+        });
+      });
+
+      // Mobile Menu Toggle
+      const menuBtn = document.getElementById("menuBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+      const mobileLinks = document.querySelectorAll(".mobile-link");
+
+      function toggleMenu() {
+        const isOpen = mobileMenu.classList.contains("translate-x-full");
+        if (isOpen) {
+          mobileMenu.classList.remove("translate-x-full");
+          mobileMenu.classList.add("translate-x-0");
+        } else {
+          mobileMenu.classList.add("translate-x-full");
+          mobileMenu.classList.remove("translate-x-0");
+        }
+      }
+
+      if (menuBtn) menuBtn.addEventListener("click", toggleMenu);
+      mobileLinks.forEach((link) => {
+        link.addEventListener("click", toggleMenu);
+      });
+
+      // Navbar Scroll Effect
+      const navbar = document.getElementById("navbar");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 40) {
+          navbar.classList.add(
+            "bg-[#F1EBDD]/90",
+            "backdrop-blur-md",
+            "shadow-sm",
+            "border-b",
+            "border-[#D2C9B5]/60",
+          );
+        } else {
+          navbar.classList.remove(
+            "bg-[#F1EBDD]/90",
+            "backdrop-blur-md",
+            "shadow-sm",
+            "border-b",
+            "border-[#D2C9B5]/60",
+          );
+        }
+      });
+
+      // Custom Toast Form Handler
+      const contactForm = document.getElementById("contactForm");
+      const toast = document.getElementById("toast");
+      const toastText = document.getElementById("toastText");
+
+      function showToast(msg) {
+        if (toastText) toastText.textContent = msg;
+        toast.classList.remove("translate-y-16", "opacity-0");
+        setTimeout(() => {
+          toast.classList.add("translate-y-16", "opacity-0");
+        }, 3500);
+      }
+
+      if (contactForm) {
+        contactForm.addEventListener("submit", (e) => {
+          e.preventDefault();
+          showToast("Message sent successfully. Thank you!");
+          contactForm.reset();
+        });
+      }
+    </script>
+
+    <!-- Motion Canvas Engine -->
+    <script>
+      (function () {
+        const FRAMES = [
+          "../frames/frame_0000.webp",
+          "../frames/frame_0001.webp",
+          "../frames/frame_0002.webp",
+          "../frames/frame_0003.webp",
+          "../frames/frame_0004.webp",
+          "../frames/frame_0005.webp",
+          "../frames/frame_0006.webp",
+          "../frames/frame_0007.webp",
+          "../frames/frame_0008.webp",
+          "../frames/frame_0009.webp",
+          "../frames/frame_0010.webp",
+          "../frames/frame_0011.webp",
+          "../frames/frame_0012.webp",
+          "../frames/frame_0013.webp",
+          "../frames/frame_0014.webp",
+          "../frames/frame_0015.webp",
+          "../frames/frame_0016.webp",
+          "../frames/frame_0017.webp",
+          "../frames/frame_0018.webp",
+          "../frames/frame_0019.webp",
+          "../frames/frame_0020.webp",
+          "../frames/frame_0021.webp",
+          "../frames/frame_0022.webp",
+          "../frames/frame_0023.webp",
+          "../frames/frame_0024.webp",
+          "../frames/frame_0025.webp",
+          "../frames/frame_0026.webp",
+          "../frames/frame_0027.webp",
+          "../frames/frame_0028.webp",
+          "../frames/frame_0029.webp",
+          "../frames/frame_0030.webp",
+          "../frames/frame_0031.webp",
+          "../frames/frame_0032.webp",
+          "../frames/frame_0033.webp",
+          "../frames/frame_0034.webp",
+          "../frames/frame_0035.webp",
+          "../frames/frame_0036.webp",
+          "../frames/frame_0037.webp",
+          "../frames/frame_0038.webp",
+          "../frames/frame_0039.webp",
+          "../frames/frame_0040.webp",
+          "../frames/frame_0041.webp",
+          "../frames/frame_0042.webp",
+          "../frames/frame_0043.webp",
+          "../frames/frame_0044.webp",
+          "../frames/frame_0045.webp",
+          "../frames/frame_0046.webp",
+          "../frames/frame_0047.webp",
+          "../frames/frame_0048.webp",
+          "../frames/frame_0049.webp",
+          "../frames/frame_0050.webp",
+          "../frames/frame_0051.webp",
+          "../frames/frame_0052.webp",
+          "../frames/frame_0053.webp",
+          "../frames/frame_0054.webp",
+          "../frames/frame_0055.webp",
+          "../frames/frame_0056.webp",
+          "../frames/frame_0057.webp",
+          "../frames/frame_0058.webp",
+          "../frames/frame_0059.webp",
+          "../frames/frame_0060.webp",
+          "../frames/frame_0061.webp",
+          "../frames/frame_0062.webp",
+          "../frames/frame_0063.webp",
+          "../frames/frame_0064.webp",
+          "../frames/frame_0065.webp",
+          "../frames/frame_0066.webp",
+          "../frames/frame_0067.webp",
+          "../frames/frame_0068.webp",
+          "../frames/frame_0069.webp",
+          "../frames/frame_0070.webp",
+          "../frames/frame_0071.webp",
+          "../frames/frame_0072.webp",
+          "../frames/frame_0073.webp",
+          "../frames/frame_0074.webp",
+          "../frames/frame_0075.webp",
+          "../frames/frame_0076.webp",
+          "../frames/frame_0077.webp",
+          "../frames/frame_0078.webp",
+          "../frames/frame_0079.webp",
+          "../frames/frame_0080.webp",
+          "../frames/frame_0081.webp",
+          "../frames/frame_0082.webp",
+          "../frames/frame_0083.webp",
+          "../frames/frame_0084.webp",
+          "../frames/frame_0085.webp",
+          "../frames/frame_0086.webp",
+          "../frames/frame_0087.webp",
+          "../frames/frame_0088.webp",
+          "../frames/frame_0089.webp",
+        ];
+        const TOTAL = FRAMES.length;
+        const MIN_SHOW = 25;
+        let images = [],
+          cur = -1,
+          ready = false,
+          loaded = 0,
+          currentP = 0,
+          targetP = 0;
+        const canvas = document.getElementById("motionCanvas");
+        const ctx = canvas ? canvas.getContext("2d") : null;
+        const section = document.getElementById("motionSection");
+        // if (section) section.style.height = (TOTAL * 4) + 'vh';
+
+        // Hero image (initial/fallback) — place your file at assets/images/latifa.jpeg
+        const heroImg = new Image();
+        heroImg.src = "assets/images/latifa.jpeg";
+        function drawHero() {
+          if (!ctx || !heroImg.complete) return;
+          const s = Math.max(
+            canvas.width / heroImg.naturalWidth,
+            canvas.height / heroImg.naturalHeight,
+          );
+          const w = heroImg.naturalWidth * s,
+            h = heroImg.naturalHeight * s;
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+          ctx.drawImage(
+            heroImg,
+            (canvas.width - w) / 2,
+            (canvas.height - h) / 2,
+            w,
+            h,
+          );
+        }
+        heroImg.onload = function () {
+          if (!ready) drawHero();
         };
-        img.src = src;
-      });
-    }
 
-    function hideLoader() {
-      const ls = document.getElementById('ls');
-      if (!ls) return;
-      ls.style.opacity = '0';
-      setTimeout(() => ls.style.display = 'none', 400);
-      var labels = ['#mLabel','#mTitle','#mSub','#mCta'];
-      labels.forEach(function(id,i) {
-        var el = document.querySelector(id);
-        if (el) setTimeout(function() { el.style.opacity = '1'; }, i*300+200);
-      });
-    }
+        function nearest(i) {
+          while (i >= 0 && (!images[i] || !images[i].naturalWidth)) i--;
+          return i;
+        }
 
-    function rAF() {
-      if (!section) { requestAnimationFrame(rAF); return; }
-      const rect = section.getBoundingClientRect();
-      const raw = (window.scrollY - rect.top + window.innerHeight) / (section.offsetHeight - window.innerHeight);
-      targetP = Math.max(0, Math.min(1, raw));
-      currentP += (targetP - currentP) * 0.1;
-      const i = Math.round(currentP * (TOTAL - 1));
-      if (i !== cur) { cur = i; draw(i); }
-      requestAnimationFrame(rAF);
-    }
+        function draw(idx) {
+          idx = nearest(idx);
+          if (idx < 0 || !ctx) return;
+          const img = images[idx];
+          const s = Math.max(
+            canvas.width / img.naturalWidth,
+            canvas.height / img.naturalHeight,
+          );
+          const w = img.naturalWidth * s,
+            h = img.naturalHeight * s;
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+          ctx.drawImage(
+            img,
+            (canvas.width - w) / 2,
+            (canvas.height - h) / 2,
+            w,
+            h,
+          );
+        }
 
-    function resize() {
-      if (!canvas) return;
-      canvas.width = window.innerWidth; canvas.height = window.innerHeight;
-      if (ready && cur >= 0) draw(cur);
-      else if (heroImg && heroImg.complete) drawHero();
-    }
+        function preload() {
+          if (!TOTAL) {
+            hideLoader();
+            ready = true;
+            rAF();
+            return;
+          }
+          images = new Array(TOTAL).fill(null);
+          FRAMES.forEach((src, i) => {
+            const img = new Image();
+            img.onload = img.onerror = () => {
+              images[i] = img;
+              loaded++;
+              const lb = document.getElementById("lb");
+              const lt = document.getElementById("lt");
+              if (lb) lb.style.width = Math.round((loaded / TOTAL) * 100) + "%";
+              if (lt)
+                lt.textContent =
+                  "Loading " + Math.round((loaded / TOTAL) * 100) + "%";
+              if (loaded >= MIN_SHOW && !ready) {
+                ready = true;
+                hideLoader();
+                resize();
+                cur = 0;
+                draw(0);
+                rAF();
+              }
+            };
+            img.src = src;
+          });
+        }
 
-    window.addEventListener('resize', resize);
-    window.addEventListener('DOMContentLoaded', function() { resize(); preload(); });
-  }());
-  </script>
-</body>
+        function hideLoader() {
+          const ls = document.getElementById("ls");
+          if (!ls) return;
+          ls.style.opacity = "0";
+          setTimeout(() => (ls.style.display = "none"), 400);
+          var labels = ["#mLabel", "#mTitle", "#mSub", "#mCta"];
+          labels.forEach(function (id, i) {
+            var el = document.querySelector(id);
+            if (el)
+              setTimeout(
+                function () {
+                  el.style.opacity = "1";
+                },
+                i * 300 + 200,
+              );
+          });
+        }
+
+        function rAF() {
+          if (!section) {
+            requestAnimationFrame(rAF);
+            return;
+          }
+          const rect = section.getBoundingClientRect();
+          const raw =
+            (window.scrollY - rect.top + window.innerHeight) /
+            (section.offsetHeight - window.innerHeight);
+          targetP = Math.max(0, Math.min(1, raw));
+          currentP += (targetP - currentP) * 0.1;
+          const i = Math.round(currentP * (TOTAL - 1));
+          if (i !== cur) {
+            cur = i;
+            draw(i);
+          }
+          requestAnimationFrame(rAF);
+        }
+
+        function resize() {
+          if (!canvas) return;
+          canvas.width = window.innerWidth;
+          canvas.height = window.innerHeight;
+          if (ready && cur >= 0) draw(cur);
+          else if (heroImg && heroImg.complete) drawHero();
+        }
+
+        window.addEventListener("resize", resize);
+        window.addEventListener("DOMContentLoaded", function () {
+          resize();
+          preload();
+        });
+      })();
+    </script>
+  </body>
 </html>
