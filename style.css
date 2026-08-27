@@ -1,0 +1,98 @@
+  :root {
+        --color-primary: #3f4932;
+        --color-dark-olive: #293021;
+        --color-bg-warm: #f1ebdd;
+        --color-bg-soft: #e5ddca;
+        --color-bg-light: #f7f3ea;
+        --color-text-primary: #25291f;
+        --color-text-secondary: #68705b;
+        --color-accent: #b5a27a;
+        --color-border: #d2c9b5;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: var(--color-bg-warm);
+        color: var(--color-text-primary);
+        overflow-x: hidden;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+      }
+      body::-webkit-scrollbar {
+        display: none;
+      }
+
+      .font-serif-editorial {
+        font-family: "DM Serif Display", serif;
+      }
+
+      .nav-cta {
+        font-size: 0.65rem;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--color-text-primary);
+        border: none;
+        background: transparent;
+        padding: 0.35rem 0.25rem;
+        transition:
+          color 0.3s ease,
+          opacity 0.3s ease;
+      }
+
+      .nav-cta:hover {
+        color: #b5a27a;
+      }
+
+      .hero-secondary-cta {
+        background: transparent;
+        color: #3f4932;
+        border: 1px solid #3f4932;
+      }
+
+      /* Paper grain texture */
+      .paper-texture {
+        background-image: radial-gradient(
+          rgba(63, 73, 50, 0.04) 1px,
+          transparent 0
+        );
+        background-size: 24px 24px;
+      }
+
+      /* Custom cursor */
+      .custom-cursor {
+        pointer-events: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        border-radius: 50%;
+        transition:
+          transform 0.15s ease-out,
+          width 0.2s ease,
+          height 0.2s ease,
+          background-color 0.2s ease;
+        transform: translate(-50%, -50%);
+      }
+
+      @keyframes marquee {
+        0% {
+          transform: translateX(0%);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+
+      .animate-marquee {
+        display: flex;
+        width: 200%;
+        animation: marquee 25s linear infinite;
+      }
+      .animate-marquee:hover {
+        animation-play-state: paused;
+      }
+
+      .hero-product-img {
+        mix-blend-mode: multiply;
+        display: block;
+      }

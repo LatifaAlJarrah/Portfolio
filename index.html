@@ -47,110 +47,10 @@
       href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./style.css" />
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@0.525.0"></script>
-
-    <style>
-      :root {
-        --color-primary: #3f4932;
-        --color-dark-olive: #293021;
-        --color-bg-warm: #f1ebdd;
-        --color-bg-soft: #e5ddca;
-        --color-bg-light: #f7f3ea;
-        --color-text-primary: #25291f;
-        --color-text-secondary: #68705b;
-        --color-accent: #b5a27a;
-        --color-border: #d2c9b5;
-      }
-
-      body {
-        font-family: "Inter", sans-serif;
-        background-color: var(--color-bg-warm);
-        color: var(--color-text-primary);
-        overflow-x: hidden;
-        scrollbar-width: none;
-        -ms-overflow-style: none;
-      }
-      body::-webkit-scrollbar {
-        display: none;
-      }
-
-      .font-serif-editorial {
-        font-family: "DM Serif Display", serif;
-      }
-
-      .nav-cta {
-        font-size: 0.65rem;
-        letter-spacing: 0.18em;
-        text-transform: uppercase;
-        color: var(--color-text-primary);
-        border: none;
-        background: transparent;
-        padding: 0.35rem 0.25rem;
-        transition:
-          color 0.3s ease,
-          opacity 0.3s ease;
-      }
-
-      .nav-cta:hover {
-        color: #b5a27a;
-      }
-
-      .hero-secondary-cta {
-        background: transparent;
-        color: #3f4932;
-        border: 1px solid #3f4932;
-      }
-
-      /* Paper grain texture */
-      .paper-texture {
-        background-image: radial-gradient(
-          rgba(63, 73, 50, 0.04) 1px,
-          transparent 0
-        );
-        background-size: 24px 24px;
-      }
-
-      /* Custom cursor */
-      .custom-cursor {
-        pointer-events: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 9999;
-        border-radius: 50%;
-        transition:
-          transform 0.15s ease-out,
-          width 0.2s ease,
-          height 0.2s ease,
-          background-color 0.2s ease;
-        transform: translate(-50%, -50%);
-      }
-
-      @keyframes marquee {
-        0% {
-          transform: translateX(0%);
-        }
-        100% {
-          transform: translateX(-50%);
-        }
-      }
-
-      .animate-marquee {
-        display: flex;
-        width: 200%;
-        animation: marquee 25s linear infinite;
-      }
-      .animate-marquee:hover {
-        animation-play-state: paused;
-      }
-
-      .hero-product-img {
-        mix-blend-mode: multiply;
-        display: block;
-      }
-    </style>
   </head>
   <body class="paper-texture">
     <!-- Custom Cursor (Desktop Only) -->
@@ -293,8 +193,6 @@
         <div
           class="sticky top-0 pt-20 pb-28 w-full flex items-center justify-center overflow-hidden"
         >
-          <!-- <canvas id="motionCanvas" class="absolute inset-0 w-full h-full object-cover opacity-90"></canvas> -->
-
           <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
             <div
               class="flex flex-col lg:flex-row items-center lg:items-center gap-8 w-full"
@@ -887,20 +785,12 @@
               </h2>
               <div class="w-20 h-[1px] bg-[#D2C9B5] mb-8"></div>
               <p class="text-[#4A4A4A] text-base leading-relaxed mb-6">
-                <!-- I am a front-end developer based in the intersection of design
-                and engineering. My approach borrows from Scandinavian editorial
-                aesthetics and contemporary architecture — creating clean,
-                breathable interfaces where every pixel serves a purpose. -->
                 I’m a front-end developer who enjoys turning ideas and designs
                 into clean, responsive digital experiences. I work mainly with
                 React and Next.js, with a strong focus on usability, reusable
                 components, and thoughtful details.
               </p>
               <p class="text-[#4A4A4A] text-base leading-relaxed mb-10">
-                <!-- When I'm not writing code or refining typographic hierarchies,
-                you'll find me exploring architecture photography, studying
-                natural material textures, or experimenting with generative UI
-                layouts. -->
                 Beyond code, I’m curious about design, visual systems, and the
                 small details that make an interface feel effortless. I’m always
                 learning, experimenting, and looking for better ways to build
@@ -974,10 +864,6 @@
                 The Challenge
               </h3>
               <p class="text-sm text-[#4A4A4A] leading-relaxed">
-                <!-- Many users wanted a simple way to browse polished website
-                templates, compare options quickly, and choose a starting point
-                without building from scratch. Profolio was created to make that
-                discovery process feel clear, curated, and approachable. -->
                 Finding a polished portfolio template is often only the first
                 step. Users still need a simple way to explore different styles,
                 understand what each template offers, and turn one into a
@@ -991,11 +877,6 @@
                 The Approach
               </h3>
               <p class="text-sm text-[#4A4A4A] leading-relaxed">
-                <!-- I used Next.js to structure the platform and deliver a modern,
-                responsive experience, while MongoDB and Prisma handled the data
-                model for templates and user-facing product content. NextAuth
-                also supported authentication flows, keeping the experience
-                streamlined for both browsing and account-based features. -->
                 I built Profolio as a template marketplace where users can
                 explore ready-made designs and build a portfolio around their
                 needs. I developed the responsive interface with Next.js and
@@ -1352,246 +1233,46 @@
       }
     </script>
 
-    <!-- Motion Canvas Engine -->
+    <!-- Hero Image Loading -->
     <script>
-      (function () {
-        const FRAMES = [
-          "../frames/frame_0000.webp",
-          "../frames/frame_0001.webp",
-          "../frames/frame_0002.webp",
-          "../frames/frame_0003.webp",
-          "../frames/frame_0004.webp",
-          "../frames/frame_0005.webp",
-          "../frames/frame_0006.webp",
-          "../frames/frame_0007.webp",
-          "../frames/frame_0008.webp",
-          "../frames/frame_0009.webp",
-          "../frames/frame_0010.webp",
-          "../frames/frame_0011.webp",
-          "../frames/frame_0012.webp",
-          "../frames/frame_0013.webp",
-          "../frames/frame_0014.webp",
-          "../frames/frame_0015.webp",
-          "../frames/frame_0016.webp",
-          "../frames/frame_0017.webp",
-          "../frames/frame_0018.webp",
-          "../frames/frame_0019.webp",
-          "../frames/frame_0020.webp",
-          "../frames/frame_0021.webp",
-          "../frames/frame_0022.webp",
-          "../frames/frame_0023.webp",
-          "../frames/frame_0024.webp",
-          "../frames/frame_0025.webp",
-          "../frames/frame_0026.webp",
-          "../frames/frame_0027.webp",
-          "../frames/frame_0028.webp",
-          "../frames/frame_0029.webp",
-          "../frames/frame_0030.webp",
-          "../frames/frame_0031.webp",
-          "../frames/frame_0032.webp",
-          "../frames/frame_0033.webp",
-          "../frames/frame_0034.webp",
-          "../frames/frame_0035.webp",
-          "../frames/frame_0036.webp",
-          "../frames/frame_0037.webp",
-          "../frames/frame_0038.webp",
-          "../frames/frame_0039.webp",
-          "../frames/frame_0040.webp",
-          "../frames/frame_0041.webp",
-          "../frames/frame_0042.webp",
-          "../frames/frame_0043.webp",
-          "../frames/frame_0044.webp",
-          "../frames/frame_0045.webp",
-          "../frames/frame_0046.webp",
-          "../frames/frame_0047.webp",
-          "../frames/frame_0048.webp",
-          "../frames/frame_0049.webp",
-          "../frames/frame_0050.webp",
-          "../frames/frame_0051.webp",
-          "../frames/frame_0052.webp",
-          "../frames/frame_0053.webp",
-          "../frames/frame_0054.webp",
-          "../frames/frame_0055.webp",
-          "../frames/frame_0056.webp",
-          "../frames/frame_0057.webp",
-          "../frames/frame_0058.webp",
-          "../frames/frame_0059.webp",
-          "../frames/frame_0060.webp",
-          "../frames/frame_0061.webp",
-          "../frames/frame_0062.webp",
-          "../frames/frame_0063.webp",
-          "../frames/frame_0064.webp",
-          "../frames/frame_0065.webp",
-          "../frames/frame_0066.webp",
-          "../frames/frame_0067.webp",
-          "../frames/frame_0068.webp",
-          "../frames/frame_0069.webp",
-          "../frames/frame_0070.webp",
-          "../frames/frame_0071.webp",
-          "../frames/frame_0072.webp",
-          "../frames/frame_0073.webp",
-          "../frames/frame_0074.webp",
-          "../frames/frame_0075.webp",
-          "../frames/frame_0076.webp",
-          "../frames/frame_0077.webp",
-          "../frames/frame_0078.webp",
-          "../frames/frame_0079.webp",
-          "../frames/frame_0080.webp",
-          "../frames/frame_0081.webp",
-          "../frames/frame_0082.webp",
-          "../frames/frame_0083.webp",
-          "../frames/frame_0084.webp",
-          "../frames/frame_0085.webp",
-          "../frames/frame_0086.webp",
-          "../frames/frame_0087.webp",
-          "../frames/frame_0088.webp",
-          "../frames/frame_0089.webp",
-        ];
-        const TOTAL = FRAMES.length;
-        const MIN_SHOW = 25;
-        let images = [],
-          cur = -1,
-          ready = false,
-          loaded = 0,
-          currentP = 0,
-          targetP = 0;
-        const canvas = document.getElementById("motionCanvas");
-        const ctx = canvas ? canvas.getContext("2d") : null;
-        const section = document.getElementById("motionSection");
-        // if (section) section.style.height = (TOTAL * 4) + 'vh';
+      document.addEventListener("DOMContentLoaded", function () {
+        const heroImage = document.getElementById("heroImage");
+        const loader = document.getElementById("ls");
+        const loadBar = document.getElementById("lb");
+        const loadText = document.getElementById("lt");
+        const labels = ["#mLabel", "#mTitle", "#mSub", "#mCta"];
 
-        // Hero image (initial/fallback) — place your file at assets/images/latifa.jpeg
-        const heroImg = new Image();
-        heroImg.src = "assets/images/latifa.jpeg";
-        function drawHero() {
-          if (!ctx || !heroImg.complete) return;
-          const s = Math.max(
-            canvas.width / heroImg.naturalWidth,
-            canvas.height / heroImg.naturalHeight,
-          );
-          const w = heroImg.naturalWidth * s,
-            h = heroImg.naturalHeight * s;
-          ctx.clearRect(0, 0, canvas.width, canvas.height);
-          ctx.drawImage(
-            heroImg,
-            (canvas.width - w) / 2,
-            (canvas.height - h) / 2,
-            w,
-            h,
-          );
-        }
-        heroImg.onload = function () {
-          if (!ready) drawHero();
-        };
-
-        function nearest(i) {
-          while (i >= 0 && (!images[i] || !images[i].naturalWidth)) i--;
-          return i;
-        }
-
-        function draw(idx) {
-          idx = nearest(idx);
-          if (idx < 0 || !ctx) return;
-          const img = images[idx];
-          const s = Math.max(
-            canvas.width / img.naturalWidth,
-            canvas.height / img.naturalHeight,
-          );
-          const w = img.naturalWidth * s,
-            h = img.naturalHeight * s;
-          ctx.clearRect(0, 0, canvas.width, canvas.height);
-          ctx.drawImage(
-            img,
-            (canvas.width - w) / 2,
-            (canvas.height - h) / 2,
-            w,
-            h,
-          );
-        }
-
-        function preload() {
-          if (!TOTAL) {
-            hideLoader();
-            ready = true;
-            rAF();
-            return;
+        function showHero() {
+          if (loadBar) loadBar.style.width = "100%";
+          if (loadText) loadText.textContent = "Loading 100%";
+          if (loader) {
+            loader.style.opacity = "0";
+            setTimeout(function () {
+              loader.style.display = "none";
+            }, 400);
           }
-          images = new Array(TOTAL).fill(null);
-          FRAMES.forEach((src, i) => {
-            const img = new Image();
-            img.onload = img.onerror = () => {
-              images[i] = img;
-              loaded++;
-              const lb = document.getElementById("lb");
-              const lt = document.getElementById("lt");
-              if (lb) lb.style.width = Math.round((loaded / TOTAL) * 100) + "%";
-              if (lt)
-                lt.textContent =
-                  "Loading " + Math.round((loaded / TOTAL) * 100) + "%";
-              if (loaded >= MIN_SHOW && !ready) {
-                ready = true;
-                hideLoader();
-                resize();
-                cur = 0;
-                draw(0);
-                rAF();
-              }
-            };
-            img.src = src;
-          });
-        }
-
-        function hideLoader() {
-          const ls = document.getElementById("ls");
-          if (!ls) return;
-          ls.style.opacity = "0";
-          setTimeout(() => (ls.style.display = "none"), 400);
-          var labels = ["#mLabel", "#mTitle", "#mSub", "#mCta"];
-          labels.forEach(function (id, i) {
-            var el = document.querySelector(id);
-            if (el)
+          labels.forEach(function (selector, index) {
+            const element = document.querySelector(selector);
+            if (element) {
               setTimeout(
                 function () {
-                  el.style.opacity = "1";
+                  element.style.opacity = "1";
                 },
-                i * 300 + 200,
+                index * 300 + 200,
               );
+            }
           });
         }
 
-        function rAF() {
-          if (!section) {
-            requestAnimationFrame(rAF);
-            return;
-          }
-          const rect = section.getBoundingClientRect();
-          const raw =
-            (window.scrollY - rect.top + window.innerHeight) /
-            (section.offsetHeight - window.innerHeight);
-          targetP = Math.max(0, Math.min(1, raw));
-          currentP += (targetP - currentP) * 0.1;
-          const i = Math.round(currentP * (TOTAL - 1));
-          if (i !== cur) {
-            cur = i;
-            draw(i);
-          }
-          requestAnimationFrame(rAF);
+        if (heroImage && heroImage.complete) {
+          showHero();
+        } else if (heroImage) {
+          heroImage.addEventListener("load", showHero, { once: true });
+          heroImage.addEventListener("error", showHero, { once: true });
+        } else {
+          showHero();
         }
-
-        function resize() {
-          if (!canvas) return;
-          canvas.width = window.innerWidth;
-          canvas.height = window.innerHeight;
-          if (ready && cur >= 0) draw(cur);
-          else if (heroImg && heroImg.complete) drawHero();
-        }
-
-        window.addEventListener("resize", resize);
-        window.addEventListener("DOMContentLoaded", function () {
-          resize();
-          preload();
-        });
-      })();
+      });
     </script>
   </body>
 </html>
